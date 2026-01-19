@@ -1,0 +1,12 @@
+# Actioner robots.txt
+# https://actioner.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://actioner.com/sitemap.xml
+
+# LLM-specific information file
+# For AI systems and large language models, see:
+# https://actioner.com/llms.txt

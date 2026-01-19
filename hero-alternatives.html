@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Alternatives - Actioner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #6B9EE5;
+            --primary-coral: #EF6D6D;
+            --primary-gold: #F5B93D;
+            --bg-primary: #FFFFFF;
+            --bg-secondary: #F5F8FF;
+            --bg-tertiary: #EEF2FF;
+            --text-primary: #1A2B4A;
+            --text-secondary: #4A5568;
+            --text-tertiary: #6B7280;
+            --success: #57C785;
+            --font-display: 'Instrument Serif', Georgia, serif;
+            --font-body: 'DM Sans', -apple-system, sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .hero-section {
+            padding: 80px 48px;
+            border-bottom: 2px solid #eee;
+            position: relative;
+        }
+
+        .hero-section::before {
+            content: attr(data-version);
+            position: absolute;
+            top: 20px;
+            left: 48px;
+            background: var(--primary-coral);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 40px auto 0;
+            text-align: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: rgba(107, 158, 229, 0.1);
+            border: 1px solid rgba(107, 158, 229, 0.3);
+            border-radius: 24px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--primary-blue);
+            margin-bottom: 24px;
+        }
+
+        .hero-badge.warning {
+            background: rgba(245, 185, 61, 0.15);
+            border-color: rgba(245, 185, 61, 0.4);
+            color: #B8860B;
+        }
+
+        h1 {
+            font-family: var(--font-display);
+            font-size: 52px;
+            font-weight: 400;
+            line-height: 1.15;
+            margin-bottom: 24px;
+            color: var(--text-primary);
+        }
+
+        h1 em {
+            font-style: italic;
+            color: var(--primary-coral);
+        }
+
+        .hero-subtitle {
+            font-size: 19px;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+            line-height: 1.7;
+            max-width: 680px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-subtitle strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin-bottom: 32px;
+        }
+
+        .btn {
+            padding: 14px 28px;
+            border-radius: 28px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            font-family: var(--font-body);
+        }
+
+        .btn-primary {
+            background: var(--primary-blue);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-secondary);
+            border: 2px solid #ddd;
+        }
+
+        .payoff {
+            font-size: 14px;
+            color: var(--text-tertiary);
+            font-style: italic;
+        }
+
+        .payoff strong {
+            color: var(--primary-coral);
+            font-weight: 600;
+        }
+
+        .divider {
+            text-align: center;
+            padding: 40px;
+            background: #f9f9f9;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-tertiary);
+        }
+
+        .notes {
+            background: #fffbeb;
+            border-left: 4px solid var(--primary-gold);
+            padding: 20px 24px;
+            margin: 24px auto 0;
+            max-width: 600px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            text-align: left;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .notes strong {
+            color: var(--text-primary);
+        }
+    </style>
+</head>
+<body>
+
+<!-- ==================== OPTION A ==================== -->
+<section class="hero-section" data-version="Option A: The Context Gap">
+    <div class="hero-content">
+        <div class="hero-badge warning">⚠️ Why AI in sales keeps disappointing</div>
+
+        <h1>AI that knows your deals.<br><em>Not just your last email.</em></h1>
+
+        <p class="hero-subtitle">
+            ChatGPT, meeting assistants, email AI—they only see fragments.
+            <strong>Actioner captures every conversation</strong> across email, calls, and meetings,
+            then builds the complete deal picture AI needs to actually help.
+        </p>
+
+        <div class="hero-cta">
+            <a href="#" class="btn btn-primary">See the difference →</a>
+            <a href="#" class="btn btn-secondary">Book a demo</a>
+        </div>
+
+        <p class="payoff">
+            The result? <strong>Forecasts you can trust. Without the admin burden.</strong>
+        </p>
+    </div>
+
+    <div class="notes">
+        <strong>Strategy:</strong> Leads with the "why other AI fails" insight, establishes Actioner's unique data capture,
+        then lands on the outcome (forecast confidence, no admin) as the payoff.
+        The visitor understands <em>why</em> Actioner can deliver what others can't.
+    </div>
+</section>
+
+
+<!-- ==================== OPTION B ==================== -->
+<section class="hero-section" data-version="Option B: Full Context = Real AI">
+    <div class="hero-content">
+        <div class="hero-badge">🔗 The missing layer for sales AI</div>
+
+        <h1>Finally, AI with the <em>full picture</em></h1>
+
+        <p class="hero-subtitle">
+            Actioner captures your emails, calls, and meetings automatically—building the complete
+            deal context that AI actually needs to deliver on its promise.
+            No more copy-pasting into ChatGPT. No more generic suggestions.
+        </p>
+
+        <div class="hero-cta">
+            <a href="#" class="btn btn-primary">Book a demo</a>
+            <a href="#" class="btn btn-secondary">Why context matters</a>
+        </div>
+
+        <p class="payoff">
+            <strong>Forecast with confidence. Without the admin burden.</strong>
+        </p>
+    </div>
+
+    <div class="notes">
+        <strong>Strategy:</strong> Positions Actioner as "the missing layer"—the thing that makes AI work.
+        More solution-focused than problem-focused. Implies existing AI tools are broken without saying it directly.
+    </div>
+</section>
+
+
+<!-- ==================== OPTION C ==================== -->
+<section class="hero-section" data-version="Option C: Evidence-Based Selling">
+    <div class="hero-content">
+        <div class="hero-badge">📋 Revenue intelligence, reinvented</div>
+
+        <h1>Every insight backed by <em>receipts</em></h1>
+
+        <p class="hero-subtitle">
+            Actioner captures every customer conversation—emails, calls, meetings—and turns them
+            into deal intelligence you can act on. Not guesses. Not dashboards.
+            <strong>Evidence-backed answers</strong> with links to the source.
+        </p>
+
+        <div class="hero-cta">
+            <a href="#" class="btn btn-primary">Book a demo</a>
+            <a href="#" class="btn btn-secondary">How it works</a>
+        </div>
+
+        <p class="payoff">
+            Forecast with confidence. <strong>Because you can prove it.</strong>
+        </p>
+    </div>
+
+    <div class="notes">
+        <strong>Strategy:</strong> Leads with "receipts"—the evidence theme.
+        Differentiates from vague AI promises by emphasizing verifiability.
+        Appeals to leaders who are tired of AI that can't show its work.
+    </div>
+</section>
+
+
+<!-- ==================== OPTION D ==================== -->
+<section class="hero-section" data-version="Option D: The Human + AI Model">
+    <div class="hero-content">
+        <div class="hero-badge">🤝 AI that works with your reps, not around them</div>
+
+        <h1>Your reps sell.<br><em>Actioner does the rest.</em></h1>
+
+        <p class="hero-subtitle">
+            We capture every customer conversation automatically—emails, calls, meetings.
+            Then AI builds the deal record, updates qualification, spots risks, and drafts the next move.
+            <strong>Your reps stay in the loop, not in the admin.</strong>
+        </p>
+
+        <div class="hero-cta">
+            <a href="#" class="btn btn-primary">Book a demo</a>
+            <a href="#" class="btn btn-secondary">See how it works</a>
+        </div>
+
+        <p class="payoff">
+            Full context. <strong>Human judgment. AI execution.</strong>
+        </p>
+    </div>
+
+    <div class="notes">
+        <strong>Strategy:</strong> Emphasizes the "human in the loop" aspect—AI as assistant, not replacement.
+        Captures the full workflow: data → AI processing → human decision.
+        May resonate with teams skeptical of AI autonomy.
+    </div>
+</section>
+
+
+<!-- ==================== OPTION E ==================== -->
+<section class="hero-section" data-version="Option E: Methodology-First">
+    <div class="hero-content">
+        <div class="hero-badge">🎯 MEDDIC. SPICED. Your framework, automated.</div>
+
+        <h1>Qualification that <em>updates itself</em></h1>
+
+        <p class="hero-subtitle">
+            Actioner listens to every customer conversation—emails, calls, meetings—and automatically
+            fills in your qualification framework. Champion confirmed? Captured. Budget discussed? Logged.
+            <strong>Your process, enforced by AI.</strong>
+        </p>
+
+        <div class="hero-cta">
+            <a href="#" class="btn btn-primary">Book a demo</a>
+            <a href="#" class="btn btn-secondary">See qualification in action</a>
+        </div>
+
+        <p class="payoff">
+            <strong>Forecast with confidence. Because the data is always current.</strong>
+        </p>
+    </div>
+
+    <div class="notes">
+        <strong>Strategy:</strong> Leads with the sales methodology angle—speaks directly to teams
+        already committed to MEDDIC/SPICED. Positions Actioner as the enforcement mechanism.
+        May resonate strongly with mature sales orgs.
+    </div>
+</section>
+
+
+<div class="divider">— End of Hero Alternatives —</div>
+
+</body>
+</html>

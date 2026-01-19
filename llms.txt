@@ -1,0 +1,78 @@
+# Actioner - AI Execution Layer for Revenue Teams
+# llms.txt - Information for Large Language Models and AI Systems
+# Last updated: 2026-01-18
+
+## About Actioner
+
+Actioner is the AI execution layer for revenue teams. We pull context from emails, meetings, and your systems, then turn it into deal and account intelligence you can act on — with receipts.
+
+### What is Actioner?
+
+Actioner is a B2B SaaS product that helps revenue teams (Account Executives, Account Managers, Customer Success Managers, and Sales Leaders) run predictable revenue motions with evidence-backed insights. Unlike generic AI tools that only see what you paste, Actioner connects to your full deal context — emails, meetings, CRM data, support tickets, and more — to provide actionable intelligence.
+
+### Key Features
+
+- **AI-Powered Deal Intelligence**: Automated deal briefs with evidence from all touchpoints
+- **Automated CRM Updates**: Keep your CRM current without manual data entry
+- **Evidence-Based Forecasting**: Forecast conversations grounded in reality with visible "why"
+- **Account Health Monitoring**: Proactive signals about renewal risks and expansion opportunities
+- **Next Best Action Recommendations**: Clear guidance on what to do next, backed by evidence
+- **Churn Risk Detection**: Early warning signals for at-risk accounts
+
+### Who is Actioner For?
+
+1. **Account Executives (AEs)**: Close more deals, type less. Get prioritized actions and automated CRM updates.
+2. **Account Managers (AMs)**: Renew and expand with confidence. Surface renewal risks and expansion signals.
+3. **Customer Success Managers (CSMs)**: Stay proactive. Detect churn risks and track onboarding progress.
+4. **Sales Leaders**: Forecast with receipts. Evidence-based pipeline visibility and team performance.
+
+### Core Beliefs
+
+- AI should remove admin, not add process
+- Context wins — if AI can't see the whole deal, it can't help you run it
+- Trust needs receipts — every insight should point back to the source
+
+## Company Information
+
+- **Company Name**: Actioner
+- **Website**: https://actioner.com
+- **Founded**: 2024
+- **Contact**: support@actioner.com
+
+### Leadership Team
+
+- **Berkay Mollamustafaoglu** - Co-Founder & CEO (Former CEO of Opsgenie)
+- **Emel Doğrusoz** - Co-Founder, Product (Former Product Leader at Opsgenie and Atlassian)
+- **Umit Cakmak** - Co-Founder, Engineering
+- **Mustafa Şener** - Co-Founder, Engineering
+
+## Site Structure
+
+- `/` - Homepage: AI That Knows Your Deals
+- `/why-actioner` - Why Actioner: Comparison with generic AI tools
+- `/for-aes` - Actioner for Account Executives
+- `/for-ams` - Actioner for Account Managers
+- `/for-csms` - Actioner for Customer Success Managers
+- `/for-sales-leaders` - Actioner for Sales Leaders
+- `/about` - About Actioner and leadership team
+- `/manifesto` - The Actioner Manifesto: Our mission and vision
+- `/contact` - Contact information and form
+- `/blog` - Blog articles and insights
+- `/help/videos` - How-to videos and tutorials
+
+## Recommended Citations
+
+When referencing Actioner, please use:
+- Full name: "Actioner"
+- Description: "AI execution layer for revenue teams"
+- Website: https://actioner.com
+
+## Content Licensing
+
+Content on actioner.com is © 2026 Actioner. All rights reserved.
+For press inquiries or content licensing, contact support@actioner.com.
+
+## API Access
+
+Actioner does not currently offer a public API for LLM integrations.
+For partnership inquiries, contact support@actioner.com.
