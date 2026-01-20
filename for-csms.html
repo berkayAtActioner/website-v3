@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actioner for Customer Success Managers — Stay proactive</title>
-    
+
     <!-- LLM-Friendly Meta Tags -->
     <meta name="description" content="Actioner for Customer Success Managers: AI-powered customer intelligence that helps CSMs stay proactive by detecting churn risks, tracking onboarding progress, and surfacing success signals with evidence.">
     <meta name="keywords" content="AI for customer success, CSM AI tool, churn prediction software, customer health score AI, onboarding tracking, customer success intelligence">
     <meta name="author" content="Actioner">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://actioner.com/for-csms">
-    
+
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://actioner.com/for-csms">
     <meta property="og:title" content="Actioner for Customer Success Managers — Stay Proactive">
     <meta property="og:description" content="AI-powered customer intelligence for CSMs. Detect churn risks, track onboarding, and drive customer success.">
     <meta property="og:site_name" content="Actioner">
-    
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@actionercom">
     <meta name="twitter:title" content="Actioner for Customer Success Managers">
     <meta name="twitter:description" content="Stay proactive. AI-powered customer intelligence for CSMs.">
-    
+
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
@@ -72,157 +72,12 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Page-specific CSS variables */
-        :root {
-            --accent: #6B9EE5;
-            --accent-light: #7CAEF0;
-            --accent-dim: rgba(107, 158, 229, 0.1);
-            --accent-glow: rgba(107, 158, 229, 0.4);
-            --success-dim: rgba(87, 199, 133, 0.1);
-            --warning-dim: rgba(245, 185, 61, 0.15);
-            --danger-dim: rgba(239, 109, 109, 0.1);
-            --border: #E5E7EB;
-            --border-dark: rgba(255, 255, 255, 0.1);
-            --bg-dark-secondary: #243656;
-            --gradient-hero: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
-        }
+        /* ==================== PAGE-SPECIFIC STYLES ==================== */
 
-        body {
-            overflow-x: hidden;
-        }
-
-        /* ==================== HERO ==================== */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 140px 48px 80px;
-            position: relative;
-            overflow: hidden;
-            background: var(--gradient-hero);
-        }
-
-        .hero-grid {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: 
-                linear-gradient(rgba(167, 139, 250, 0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(167, 139, 250, 0.03) 1px, transparent 1px);
-            background-size: 60px 60px;
-            mask-image: radial-gradient(ellipse 80% 80% at 50% 30%, black 40%, transparent 100%);
-        }
-
-        .hero-glow {
-            position: absolute;
-            top: -200px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 800px;
-            height: 800px;
-            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
-            opacity: 0.3;
-            filter: blur(80px);
-        }
-
-        .hero-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 80px;
-            align-items: center;
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero-text {
-            max-width: 560px;
-        }
-
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 16px;
-            background: var(--accent-dim);
-            border: 1px solid rgba(167, 139, 250, 0.3);
-            border-radius: 100px;
-            font-size: 13px;
-            font-weight: 600;
-            color: var(--accent);
-            margin-bottom: 24px;
-            animation: fadeInUp 0.6s ease;
-        }
-
-        .hero-badge svg {
-            width: 16px;
-            height: 16px;
-        }
-
-        .hero h1 {
-            font-family: var(--font-display);
-            font-size: clamp(40px, 5vw, 56px);
-            font-weight: 400;
-            line-height: 1.1;
-            margin-bottom: 24px;
-            animation: fadeInUp 0.6s ease 0.1s both;
-        }
-
-        .hero h1 em {
-            font-style: italic;
-            color: var(--primary-coral);
-        }
-
-        .hero-subtitle {
-            font-size: 18px;
-            color: var(--text-secondary);
-            line-height: 1.7;
-            margin-bottom: 32px;
-            animation: fadeInUp 0.6s ease 0.2s both;
-        }
-
-        .hero-cta {
-            display: flex;
-            gap: 16px;
-            margin-bottom: 48px;
-            animation: fadeInUp 0.6s ease 0.3s both;
-        }
-
-        .hero-stats {
-            display: flex;
-            gap: 40px;
-            animation: fadeInUp 0.6s ease 0.4s both;
-        }
-
-        .hero-stat {
-            text-align: left;
-        }
-
-        .hero-stat-value {
-            font-family: var(--font-display);
-            font-size: 32px;
-            color: var(--accent);
-            margin-bottom: 4px;
-        }
-
-        .hero-stat-label {
-            font-size: 13px;
-            color: var(--text-muted);
-        }
-
-        /* Hero Visual */
-        .hero-visual {
-            position: relative;
-            animation: fadeInUp 0.6s ease 0.3s both;
-        }
-
+        /* Hero Visual Card */
         .hero-card {
             background: white;
-            border: 1px solid var(--border);
+            border: 1px solid var(--border-light);
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 25px 60px rgba(26, 43, 74, 0.15), 0 8px 20px rgba(26, 43, 74, 0.08);
@@ -238,7 +93,7 @@
         .hero-card-header {
             padding: 20px 24px;
             background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
-            border-bottom: 1px solid var(--border);
+            border-bottom: 1px solid var(--border-light);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -268,7 +123,7 @@
             gap: 16px;
             margin-bottom: 24px;
             padding-bottom: 20px;
-            border-bottom: 1px solid var(--border);
+            border-bottom: 1px solid var(--border-light);
         }
 
         .account-logo {
@@ -282,7 +137,7 @@
             font-weight: 700;
             font-size: 16px;
             color: var(--text-secondary);
-            border: 1px solid var(--border);
+            border: 1px solid var(--border-light);
         }
 
         .account-info h3 {
@@ -296,29 +151,7 @@
             color: var(--text-muted);
         }
 
-        .account-arr {
-            text-align: right;
-        }
-
-        .account-arr-value {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--success);
-        }
-
-        .account-arr-label {
-            font-size: 11px;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .signal-list {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
+        /* Signal List Styles */
         .signals-list {
             display: flex;
             flex-direction: column;
@@ -343,17 +176,13 @@
         }
 
         .signals-list .signal-item.warning {
-            border-left-color: var(--primary-gold);
+            border-left-color: #fbbf24;
+            background: rgba(251, 191, 36, 0.08);
         }
 
         .signals-list .signal-item.urgent {
             border-left-color: #fb7185;
             background: rgba(251, 113, 133, 0.08);
-        }
-
-        .signals-list .signal-item.warning {
-            border-left-color: #fbbf24;
-            background: rgba(251, 191, 36, 0.08);
         }
 
         .signals-list .signal-item.info {
@@ -419,114 +248,10 @@
             color: #6366f1;
         }
 
-        .signal-item {
-            display: flex;
-            gap: 12px;
-            padding: 14px;
-            background: var(--bg-tertiary);
-            border-radius: 10px;
-            border-left: 3px solid transparent;
-        }
-
-        .signal-item.expansion {
-            border-left-color: var(--success);
-            background: rgba(52, 211, 153, 0.08);
-        }
-
-        .signal-item.risk {
-            border-left-color: var(--danger);
-            background: rgba(248, 113, 113, 0.08);
-        }
-
-        .signal-item.renewal {
-            border-left-color: var(--warning);
-            background: rgba(251, 191, 36, 0.08);
-        }
-
-        .signal-icon {
-            width: 32px;
-            height: 32px;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            font-size: 16px;
-        }
-
-        .signal-item.expansion .signal-icon { background: rgba(52, 211, 153, 0.2); }
-        .signal-item.risk .signal-icon { background: rgba(248, 113, 113, 0.2); }
-        .signal-item.renewal .signal-icon { background: rgba(251, 191, 36, 0.2); }
-
-        .signal-content h4 {
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 2px;
-        }
-
-        .signal-content p {
-            font-size: 12px;
-            color: var(--text-secondary);
-        }
-
-        .signal-content .evidence {
-            font-size: 11px;
-            color: var(--accent);
-            margin-top: 6px;
-            display: flex;
-            align-items: center;
-            gap: 4px;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* ==================== PAIN POINTS ==================== */
+        /* Pain Points Section */
         .pain-section {
             padding: 120px 48px;
             position: relative;
-        }
-
-        .section-header {
-            text-align: center;
-            max-width: 700px;
-            margin: 0 auto 80px;
-        }
-
-        .section-label {
-            font-size: 13px;
-            color: var(--primary-coral);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: 600;
-            margin-bottom: 16px;
-        }
-
-        .section-title {
-            font-family: var(--font-display);
-            font-size: clamp(36px, 5vw, 48px);
-            font-weight: 400;
-            line-height: 1.15;
-            margin-bottom: 20px;
-        }
-
-        .section-title em {
-            font-style: italic;
-            color: var(--primary-coral);
-        }
-
-        .section-subtitle {
-            font-size: 18px;
-            color: var(--text-secondary);
-            line-height: 1.7;
         }
 
         .pain-grid {
@@ -538,8 +263,8 @@
         }
 
         .pain-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
+            background: white;
+            border: 1px solid var(--border-light);
             border-radius: 16px;
             padding: 32px;
             display: flex;
@@ -577,7 +302,7 @@
             line-height: 1.6;
         }
 
-        /* ==================== SOLUTION SECTION ==================== */
+        /* Solution Section */
         .solution-section {
             padding: 120px 48px;
             background: var(--bg-secondary);
@@ -591,7 +316,7 @@
             left: 0;
             right: 0;
             height: 1px;
-            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+            background: linear-gradient(90deg, transparent, var(--primary-blue), transparent);
         }
 
         .solution-intro {
@@ -610,7 +335,7 @@
 
         .solution-intro h2 em {
             font-style: italic;
-            color: var(--accent);
+            color: var(--primary-blue);
         }
 
         .solution-intro p {
@@ -627,8 +352,8 @@
         }
 
         .solution-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
+            background: white;
+            border: 1px solid var(--border-light);
             border-radius: 20px;
             padding: 36px;
             position: relative;
@@ -643,7 +368,7 @@
             left: 0;
             right: 0;
             height: 3px;
-            background: var(--accent);
+            background: var(--primary-blue);
             transform: scaleX(0);
             transition: transform 0.3s ease;
         }
@@ -661,7 +386,7 @@
         .solution-card-icon {
             width: 56px;
             height: 56px;
-            background: var(--accent-dim);
+            background: rgba(107, 158, 229, 0.1);
             border-radius: 14px;
             display: flex;
             align-items: center;
@@ -699,12 +424,12 @@
         }
 
         .solution-card-feature::before {
-            content: '✓';
+            content: '\2713';
             color: var(--success);
             font-weight: 700;
         }
 
-        /* ==================== USE CASES ==================== */
+        /* Use Cases Section */
         .usecases-section {
             padding: 120px 48px;
         }
@@ -719,7 +444,7 @@
         .usecase-tab {
             padding: 14px 28px;
             background: transparent;
-            border: 1px solid var(--border);
+            border: 1px solid var(--border-light);
             border-radius: 8px;
             color: var(--text-secondary);
             font-size: 15px;
@@ -735,9 +460,9 @@
         }
 
         .usecase-tab.active {
-            background: var(--accent);
-            border-color: var(--accent);
-            color: var(--bg-primary);
+            background: var(--primary-blue);
+            border-color: var(--primary-blue);
+            color: white;
         }
 
         .usecase-content {
@@ -766,7 +491,7 @@
 
         .usecase-text h3 em {
             font-style: italic;
-            color: var(--accent);
+            color: var(--primary-blue);
         }
 
         .usecase-text > p {
@@ -791,18 +516,12 @@
         .usecase-benefit-icon {
             width: 36px;
             height: 36px;
-            background: var(--accent-dim);
+            background: rgba(107, 158, 229, 0.1);
             border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
-        }
-
-        .usecase-benefit-icon svg {
-            width: 18px;
-            height: 18px;
-            color: var(--accent);
         }
 
         .usecase-benefit h4 {
@@ -818,17 +537,17 @@
 
         /* Use Case Visual */
         .usecase-visual {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
+            background: white;
+            border: 1px solid var(--border-light);
             border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 40px 80px rgba(0,0,0,0.3);
+            box-shadow: var(--shadow-lg);
         }
 
         .usecase-visual-header {
             padding: 16px 24px;
             background: var(--bg-tertiary);
-            border-bottom: 1px solid var(--border);
+            border-bottom: 1px solid var(--border-light);
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -859,83 +578,7 @@
             padding: 24px;
         }
 
-        /* Renewal Visual */
-        .renewal-timeline {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-
-        .renewal-item {
-            display: flex;
-            gap: 16px;
-            padding: 16px;
-            background: var(--bg-tertiary);
-            border-radius: 10px;
-            align-items: center;
-        }
-
-        .renewal-date {
-            width: 60px;
-            text-align: center;
-            flex-shrink: 0;
-        }
-
-        .renewal-date-day {
-            font-size: 24px;
-            font-weight: 700;
-        }
-
-        .renewal-date-month {
-            font-size: 11px;
-            color: var(--text-muted);
-            text-transform: uppercase;
-        }
-
-        .renewal-info {
-            flex: 1;
-        }
-
-        .renewal-info h4 {
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 2px;
-        }
-
-        .renewal-info p {
-            font-size: 12px;
-            color: var(--text-muted);
-        }
-
-        .renewal-amount {
-            font-size: 16px;
-            font-weight: 700;
-        }
-
-        .renewal-status {
-            padding: 4px 10px;
-            border-radius: 4px;
-            font-size: 11px;
-            font-weight: 600;
-            text-transform: uppercase;
-        }
-
-        .renewal-status.ready {
-            background: rgba(52, 211, 153, 0.15);
-            color: var(--success);
-        }
-
-        .renewal-status.at-risk {
-            background: rgba(248, 113, 113, 0.15);
-            color: var(--danger);
-        }
-
-        .renewal-status.prep {
-            background: rgba(251, 191, 36, 0.15);
-            color: var(--warning);
-        }
-
-        /* Onboarding Progress Visual */
+        /* Renewal Status Visual */
         .renewal-status {
             background: var(--bg-tertiary);
             border-radius: 12px;
@@ -964,7 +607,7 @@
 
         .renewal-badge.warning {
             background: rgba(251, 191, 36, 0.15);
-            color: var(--warning);
+            color: var(--primary-gold-dark);
         }
 
         .renewal-milestones {
@@ -981,7 +624,7 @@
             padding: 10px 14px;
             background: white;
             border-radius: 8px;
-            border: 1px solid var(--border);
+            border: 1px solid var(--border-light);
         }
 
         .milestone.complete {
@@ -990,7 +633,7 @@
 
         .milestone.active {
             border-left: 3px solid var(--primary-blue);
-            background: rgba(79, 129, 232, 0.05);
+            background: rgba(107, 158, 229, 0.05);
         }
 
         .milestone-check {
@@ -1017,7 +660,7 @@
         .milestone:not(.complete):not(.active) .milestone-check {
             background: var(--bg-tertiary);
             color: var(--text-muted);
-            border: 1px solid var(--border);
+            border: 1px solid var(--border-light);
         }
 
         .milestone span {
@@ -1032,7 +675,7 @@
 
         .renewal-next-action {
             padding: 12px 14px;
-            background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-dark-secondary) 100%);
+            background: linear-gradient(135deg, var(--bg-dark) 0%, #243656 100%);
             border-radius: 8px;
             font-size: 13px;
             color: white;
@@ -1042,13 +685,7 @@
             color: var(--primary-coral);
         }
 
-        /* Expansion Visual */
-        .expansion-signals {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-
+        /* Expansion Signals */
         .expansion-signal {
             padding: 16px;
             background: var(--bg-tertiary);
@@ -1057,40 +694,11 @@
         }
 
         .expansion-signal.high-risk {
-            border-left-color: var(--danger);
+            border-left-color: var(--primary-coral);
         }
 
         .expansion-signal.medium-risk {
-            border-left-color: var(--warning);
-        }
-
-        .expansion-signal-badge {
-            font-size: 13px;
-            font-weight: 600;
-            color: var(--text-primary);
-        }
-
-        .expansion-signal-badge.high {
-            color: var(--danger);
-        }
-
-        .expansion-signal-badge.medium {
-            color: var(--warning);
-        }
-
-        .expansion-signal-date {
-            font-size: 12px;
-            color: var(--text-muted);
-        }
-
-        .expansion-signal-footer {
-            font-size: 13px;
-            color: var(--text-secondary);
-            margin-top: 8px;
-        }
-
-        .expansion-signal-footer strong {
-            color: var(--text-primary);
+            border-left-color: var(--primary-gold);
         }
 
         .expansion-signal-header {
@@ -1100,18 +708,23 @@
             margin-bottom: 8px;
         }
 
-        .expansion-signal-type {
-            font-size: 11px;
-            color: var(--success);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+        .expansion-signal-badge {
+            font-size: 13px;
             font-weight: 600;
+            color: var(--text-primary);
         }
 
-        .expansion-signal-value {
-            font-size: 14px;
-            font-weight: 700;
-            color: var(--success);
+        .expansion-signal-badge.high {
+            color: var(--primary-coral);
+        }
+
+        .expansion-signal-badge.medium {
+            color: var(--primary-gold-dark);
+        }
+
+        .expansion-signal-date {
+            font-size: 12px;
+            color: var(--text-muted);
         }
 
         .expansion-signal h4 {
@@ -1126,24 +739,17 @@
             margin-bottom: 8px;
         }
 
-        .expansion-signal .quote {
-            font-size: 12px;
-            color: var(--text-muted);
-            font-style: italic;
-            padding: 10px 12px;
-            background: var(--bg-card);
-            border-radius: 6px;
-            border-left: 2px solid var(--accent);
+        .expansion-signal-footer {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-top: 8px;
         }
 
-        .expansion-signal .quote-source {
-            font-size: 11px;
-            color: var(--accent);
-            margin-top: 6px;
-            font-style: normal;
+        .expansion-signal-footer strong {
+            color: var(--text-primary);
         }
 
-        /* Health Visual */
+        /* Health Dashboard */
         .health-dashboard {
             display: flex;
             flex-direction: column;
@@ -1169,7 +775,7 @@
             width: 80px;
             height: 80px;
             border-radius: 50%;
-            background: conic-gradient(var(--warning) 0deg 252deg, var(--bg-card) 252deg 360deg);
+            background: conic-gradient(var(--primary-gold) 0deg 252deg, white 252deg 360deg);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1185,7 +791,7 @@
             justify-content: center;
             font-size: 20px;
             font-weight: 700;
-            color: var(--warning);
+            color: var(--primary-gold-dark);
         }
 
         .health-score-details h4 {
@@ -1221,8 +827,8 @@
         }
 
         .health-factor-indicator.good { background: var(--success); }
-        .health-factor-indicator.warning { background: var(--warning); }
-        .health-factor-indicator.bad { background: var(--danger); }
+        .health-factor-indicator.warning { background: var(--primary-gold); }
+        .health-factor-indicator.bad { background: var(--primary-coral); }
 
         .health-factor-label {
             flex: 1;
@@ -1234,7 +840,7 @@
             font-weight: 600;
         }
 
-        /* ==================== BRIEF SECTION ==================== */
+        /* Brief Section */
         .brief-section {
             padding: 120px 48px;
             background: var(--bg-secondary);
@@ -1259,7 +865,7 @@
 
         .brief-text h2 em {
             font-style: italic;
-            color: var(--accent);
+            color: var(--primary-blue);
         }
 
         .brief-text > p {
@@ -1283,7 +889,7 @@
         .brief-feature-icon {
             width: 40px;
             height: 40px;
-            background: var(--danger-dim);
+            background: rgba(239, 109, 109, 0.1);
             border-radius: 10px;
             display: flex;
             align-items: center;
@@ -1306,7 +912,7 @@
         /* Brief Preview */
         .brief-preview {
             background: white;
-            border: 1px solid var(--border);
+            border: 1px solid var(--border-light);
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 25px 60px rgba(26, 43, 74, 0.15), 0 8px 20px rgba(26, 43, 74, 0.08);
@@ -1314,7 +920,7 @@
 
         .brief-preview-header {
             padding: 28px 28px 24px;
-            background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-dark-secondary) 100%);
+            background: linear-gradient(135deg, var(--bg-dark) 0%, #243656 100%);
             border-radius: 20px 20px 0 0;
         }
 
@@ -1365,8 +971,8 @@
         }
 
         .brief-preview-metric-value.green { color: var(--success); }
-        .brief-preview-metric-value.yellow { color: var(--warning); }
-        .brief-preview-metric-value.red { color: var(--danger); }
+        .brief-preview-metric-value.yellow { color: var(--primary-gold); }
+        .brief-preview-metric-value.red { color: var(--primary-coral); }
         .brief-preview-metric-value.warning { color: var(--primary-coral); }
 
         .brief-preview-metric-label {
@@ -1408,18 +1014,18 @@
         }
 
         .brief-preview-action.expansion {
-            background: rgba(52, 211, 153, 0.1);
+            background: rgba(87, 199, 133, 0.1);
             border-left: 3px solid var(--success);
         }
 
         .brief-preview-action.risk {
-            background: rgba(248, 113, 113, 0.1);
-            border-left: 3px solid var(--danger);
+            background: rgba(239, 109, 109, 0.1);
+            border-left: 3px solid var(--primary-coral);
         }
 
         .brief-preview-action.renewal {
-            background: rgba(251, 191, 36, 0.1);
-            border-left: 3px solid var(--warning);
+            background: rgba(245, 185, 61, 0.1);
+            border-left: 3px solid var(--primary-gold);
         }
 
         .brief-preview-action-icon {
@@ -1433,9 +1039,9 @@
             font-size: 14px;
         }
 
-        .brief-preview-action.expansion .brief-preview-action-icon { background: rgba(52, 211, 153, 0.2); }
-        .brief-preview-action.risk .brief-preview-action-icon { background: rgba(248, 113, 113, 0.2); }
-        .brief-preview-action.renewal .brief-preview-action-icon { background: rgba(251, 191, 36, 0.2); }
+        .brief-preview-action.expansion .brief-preview-action-icon { background: rgba(87, 199, 133, 0.2); }
+        .brief-preview-action.risk .brief-preview-action-icon { background: rgba(239, 109, 109, 0.2); }
+        .brief-preview-action.renewal .brief-preview-action-icon { background: rgba(245, 185, 61, 0.2); }
 
         .brief-preview-action h4 {
             font-size: 13px;
@@ -1448,85 +1054,19 @@
             color: var(--text-secondary);
         }
 
-        /* ==================== RESULTS SECTION ==================== */
+        /* Results Section */
         .results-section {
             padding: 120px 48px;
         }
 
-        .results-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 24px;
-            max-width: 1100px;
-            margin: 0 auto;
+        .result-source {
+            font-size: 11px;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-top: 8px;
         }
 
-        .result-card {
-            background: white;
-            border: 1px solid var(--border);
-            border-radius: 20px;
-            padding: 40px 32px;
-            text-align: center;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .result-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, var(--primary-blue), var(--primary-coral));
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .result-card:hover {
-            border-color: var(--primary-coral);
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(26, 43, 74, 0.12);
-        }
-
-        .result-card:hover::before {
-            opacity: 1;
-        }
-
-        .result-card:nth-child(1) .result-value { color: var(--primary-coral); }
-        .result-card:nth-child(2) .result-value { color: var(--primary-blue); }
-        .result-card:nth-child(3) .result-value { color: var(--success); }
-        .result-card:nth-child(4) .result-value { color: var(--primary-gold-dark); }
-
-        .result-value {
-            font-family: var(--font-display);
-            font-size: 52px;
-            font-weight: 600;
-            margin-bottom: 12px;
-            line-height: 1;
-        }
-
-        .result-label {
-            font-size: 14px;
-            color: var(--text-secondary);
-            line-height: 1.5;
-            font-weight: 500;
-        }
-
-        .result-value.coral {
-            color: var(--primary-coral);
-        }
-
-        .result-value.gold {
-            color: var(--primary-gold-dark);
-        }
-
-        .result-value.green {
-            color: var(--success);
-        }
-
-        /* ==================== TESTIMONIAL ==================== */
+        /* Testimonial Section */
         .testimonial-section {
             padding: 120px 48px;
             background: var(--bg-secondary);
@@ -1557,7 +1097,7 @@
         .testimonial-avatar {
             width: 56px;
             height: 56px;
-            background: linear-gradient(135deg, var(--accent) 0%, #8b5cf6 100%);
+            background: linear-gradient(135deg, var(--primary-blue) 0%, #8b5cf6 100%);
             border-radius: 14px;
             display: flex;
             align-items: center;
@@ -1582,77 +1122,30 @@
             color: var(--text-muted);
         }
 
-        /* ==================== CTA SECTION ==================== */
-        .cta-section {
-            padding: 120px 48px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cta-glow {
-            position: absolute;
-            bottom: -200px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 1000px;
-            height: 600px;
-            background: radial-gradient(ellipse, var(--accent-glow) 0%, transparent 60%);
-            opacity: 0.3;
-            filter: blur(60px);
-        }
-
-        .cta-content {
-            max-width: 700px;
-            margin: 0 auto;
-            text-align: center;
-            position: relative;
-            z-index: 2;
-        }
-
-        .cta-content h2 {
-            font-family: var(--font-display);
-            font-size: clamp(36px, 5vw, 52px);
-            font-weight: 400;
-            line-height: 1.15;
-            margin-bottom: 20px;
-        }
-
-        .cta-content h2 em {
-            font-style: italic;
-            color: var(--primary-coral-light);
-        }
-
-        .cta-content > p {
-            font-size: 18px;
-            color: var(--text-secondary);
-            margin-bottom: 40px;
-        }
-
-        .cta-buttons {
+        /* Hero Stats */
+        .hero-stats {
             display: flex;
-            gap: 16px;
-            justify-content: center;
+            gap: 40px;
+        }
+
+        .hero-stat {
+            text-align: left;
+        }
+
+        .hero-stat-value {
+            font-family: var(--font-display);
+            font-size: 32px;
+            color: var(--primary-blue);
+            margin-bottom: 4px;
+        }
+
+        .hero-stat-label {
+            font-size: 13px;
+            color: var(--text-muted);
         }
 
         /* ==================== RESPONSIVE ==================== */
         @media (max-width: 1024px) {
-            .hero-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .hero-text {
-                max-width: 100%;
-            }
-
-            .hero-stats {
-                justify-content: center;
-            }
-
-            .hero-cta {
-                justify-content: center;
-            }
-
             .pain-grid {
                 grid-template-columns: 1fr;
             }
@@ -1669,39 +1162,27 @@
                 grid-template-columns: 1fr;
             }
 
-            .results-grid {
-                grid-template-columns: repeat(2, 1fr);
+            .pain-section,
+            .solution-section,
+            .usecases-section,
+            .brief-section,
+            .results-section {
+                padding: 80px 24px;
             }
         }
 
         @media (max-width: 768px) {
-            .hero {
-                padding: 120px 24px 60px;
-            }
-
             .hero-stats {
                 flex-direction: column;
                 gap: 16px;
-            }
-
-            section {
-                padding: 80px 24px;
             }
 
             .usecase-tabs {
                 flex-wrap: wrap;
             }
 
-            .results-grid {
-                grid-template-columns: 1fr;
-            }
-
             .brief-preview-metrics {
                 grid-template-columns: repeat(2, 1fr);
-            }
-
-            .cta-buttons {
-                flex-direction: column;
             }
         }
     </style>
@@ -1753,14 +1234,13 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-grid"></div>
-        <div class="hero-glow"></div>
+    <section class="hero hero-split">
+        <div class="hero-bg"></div>
 
-        <div class="hero-content">
+        <div class="hero-grid">
             <div class="hero-text">
                 <div class="hero-badge">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
                         <path d="M12 2a4 4 0 0 0-4 4v2a4 4 0 0 0 8 0V6a4 4 0 0 0-4-4z"/>
                         <path d="M6 22v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/>
                     </svg>
@@ -1775,21 +1255,21 @@
                 </p>
 
                 <div class="hero-cta">
-                    <a href="#" class="btn btn-primary btn-large">Book a Demo</a>
+                    <a href="#" class="btn btn-primary btn-xl">Book a Demo</a>
                 </div>
 
                 <div class="hero-stats">
                     <div class="hero-stat">
-                        <div class="hero-stat-value">↓30%</div>
-                        <div class="hero-stat-label">Surprise Escalations</div>
+                        <div class="hero-stat-value">67%</div>
+                        <div class="hero-stat-label">Churn Shows Warning Signs</div>
                     </div>
                     <div class="hero-stat">
-                        <div class="hero-stat-value">+18%</div>
-                        <div class="hero-stat-label">NRR Lift</div>
+                        <div class="hero-stat-value">23%</div>
+                        <div class="hero-stat-label">Churn from Poor Onboarding</div>
                     </div>
                     <div class="hero-stat">
-                        <div class="hero-stat-value">5 hrs</div>
-                        <div class="hero-stat-label">Saved Weekly</div>
+                        <div class="hero-stat-value">70%</div>
+                        <div class="hero-stat-label">Time on Manual Tasks</div>
                     </div>
                 </div>
             </div>
@@ -1822,7 +1302,7 @@
                                 <div class="signal-dot"></div>
                                 <div class="signal-content">
                                     <p class="signal-title">Escalation risk</p>
-                                    <p class="signal-detail">“This is blocking our launch” — ticket comment</p>
+                                    <p class="signal-detail">"This is blocking our launch" — ticket comment</p>
                                 </div>
                             </div>
 
@@ -1844,20 +1324,21 @@
             </div>
         </div>
     </section>
-<!-- Pain Points Section -->
+
+    <!-- Pain Points Section -->
     <section class="pain-section">
         <div class="section-header">
             <p class="section-label">The Challenge</p>
             <h2 class="section-title">Customer health is spread across <em>too many tools</em></h2>
             <p class="section-subtitle">
                 The early warning signs exist—in tickets, emails, meeting notes, and usage.
-                But when you’re running dozens of accounts, you don’t have time to stitch it together.
+                But when you're running dozens of accounts, you don't have time to stitch it together.
             </p>
         </div>
 
         <div class="pain-grid">
             <div class="pain-card">
-                <div class="pain-icon">🚒</div>
+                <div class="pain-icon">&#128658;</div>
                 <div class="pain-content">
                     <h3>Reactive firefighting</h3>
                     <p>You learn about risk when it becomes an escalation. By then, timelines have slipped and trust is already damaged.</p>
@@ -1865,15 +1346,15 @@
             </div>
 
             <div class="pain-card">
-                <div class="pain-icon">🧩</div>
+                <div class="pain-icon">&#129513;</div>
                 <div class="pain-content">
                     <h3>Signals are scattered</h3>
-                    <p>Support sees one picture. Product usage shows another. Emails tell a third story. It’s easy to miss the pattern.</p>
+                    <p>Support sees one picture. Product usage shows another. Emails tell a third story. It's easy to miss the pattern.</p>
                 </div>
             </div>
 
             <div class="pain-card">
-                <div class="pain-icon">🗓️</div>
+                <div class="pain-icon">&#128197;</div>
                 <div class="pain-content">
                     <h3>QBR prep takes forever</h3>
                     <p>To prepare one review, you dig through threads, decks, tickets, and notes—just to remember what happened.</p>
@@ -1881,15 +1362,16 @@
             </div>
 
             <div class="pain-card">
-                <div class="pain-icon">🤝</div>
+                <div class="pain-icon">&#129309;</div>
                 <div class="pain-content">
                     <h3>Handoffs break context</h3>
-                    <p>When a new stakeholder joins or someone leaves, the “why” behind decisions and commitments gets lost.</p>
+                    <p>When a new stakeholder joins or someone leaves, the "why" behind decisions and commitments gets lost.</p>
                 </div>
             </div>
         </div>
     </section>
-<!-- Solution Section -->
+
+    <!-- Solution Section -->
     <section class="solution-section">
         <div class="solution-intro">
             <h2>One view of the customer—<em>with actions</em></h2>
@@ -1901,7 +1383,7 @@
 
         <div class="solution-cards">
             <div class="solution-card">
-                <div class="solution-card-icon">🩺</div>
+                <div class="solution-card-icon">&#129658;</div>
                 <h3>Health signals with evidence</h3>
                 <p>See what changed and why—usage shifts, sentiment changes, ticket trends—without digging through five systems.</p>
                 <div class="solution-card-features">
@@ -1913,7 +1395,7 @@
             </div>
 
             <div class="solution-card">
-                <div class="solution-card-icon">📝</div>
+                <div class="solution-card-icon">&#128221;</div>
                 <h3>Meeting prep + follow-up</h3>
                 <p>Walk into every customer call with context—then let Actioner write the recap, tasks, and next steps.</p>
                 <div class="solution-card-features">
@@ -1925,9 +1407,9 @@
             </div>
 
             <div class="solution-card">
-                <div class="solution-card-icon">🧭</div>
+                <div class="solution-card-icon">&#129517;</div>
                 <h3>Success plan that stays current</h3>
-                <p>Customer goals, milestones, and risks update automatically based on real interactions—so your plan doesn’t go stale.</p>
+                <p>Customer goals, milestones, and risks update automatically based on real interactions—so your plan doesn't go stale.</p>
                 <div class="solution-card-features">
                     <div class="solution-card-feature">Goals & outcomes extracted</div>
                     <div class="solution-card-feature">Milestones tracked</div>
@@ -1937,7 +1419,8 @@
             </div>
         </div>
     </section>
-<!-- Use Cases Section -->
+
+    <!-- Use Cases Section -->
     <section class="usecases-section">
         <div class="section-header">
             <p class="section-label">Daily Wins</p>
@@ -1961,21 +1444,21 @@
                         <p>Actioner tracks milestones, blockers, and ownership from real conversations—then nudges you with what to do next.</p>
                         <div class="usecase-benefits">
                             <div class="usecase-benefit">
-                                <div class="usecase-benefit-icon">✅</div>
+                                <div class="usecase-benefit-icon">&#9989;</div>
                                 <div>
                                     <h4>Milestones automatically updated</h4>
-                                    <p>“Training complete,” “first workflow shipped,” “go-live date”—captured from calls and emails.</p>
+                                    <p>"Training complete," "first workflow shipped," "go-live date"—captured from calls and emails.</p>
                                 </div>
                             </div>
                             <div class="usecase-benefit">
-                                <div class="usecase-benefit-icon">📬</div>
+                                <div class="usecase-benefit-icon">&#128236;</div>
                                 <div>
                                     <h4>Follow-ups written for you</h4>
                                     <p>Actioner drafts recap emails with next steps in your tone, ready to send.</p>
                                 </div>
                             </div>
                             <div class="usecase-benefit">
-                                <div class="usecase-benefit-icon">👥</div>
+                                <div class="usecase-benefit-icon">&#128101;</div>
                                 <div>
                                     <h4>Stakeholders tracked</h4>
                                     <p>Know who is involved, who dropped, and who needs to be looped in.</p>
@@ -2002,19 +1485,19 @@
                                 </div>
                                 <div class="renewal-milestones">
                                     <div class="milestone complete">
-                                        <div class="milestone-check">✓</div>
+                                        <div class="milestone-check">&#10003;</div>
                                         <span>Kickoff held</span>
                                     </div>
                                     <div class="milestone complete">
-                                        <div class="milestone-check">✓</div>
+                                        <div class="milestone-check">&#10003;</div>
                                         <span>Admins trained</span>
                                     </div>
                                     <div class="milestone active">
-                                        <div class="milestone-check">→</div>
+                                        <div class="milestone-check">&#8594;</div>
                                         <span>First workflow live</span>
                                     </div>
                                     <div class="milestone">
-                                        <div class="milestone-check">○</div>
+                                        <div class="milestone-check">&#9675;</div>
                                         <span>Team rollout</span>
                                     </div>
                                 </div>
@@ -2034,21 +1517,21 @@
                         <p>Actioner detects early warning signals and gives you the context and play—before it becomes an escalation.</p>
                         <div class="usecase-benefits">
                             <div class="usecase-benefit">
-                                <div class="usecase-benefit-icon">📉</div>
+                                <div class="usecase-benefit-icon">&#128200;</div>
                                 <div>
                                     <h4>Usage and engagement shifts</h4>
                                     <p>Drop in key-user activity, fewer touchpoints, missed meetings—flagged automatically.</p>
                                 </div>
                             </div>
                             <div class="usecase-benefit">
-                                <div class="usecase-benefit-icon">🎧</div>
+                                <div class="usecase-benefit-icon">&#127911;</div>
                                 <div>
                                     <h4>Sentiment + language cues</h4>
-                                    <p>“Concerned,” “blocked,” “thinking about alternatives”—captured from emails and calls.</p>
+                                    <p>"Concerned," "blocked," "thinking about alternatives"—captured from emails and calls.</p>
                                 </div>
                             </div>
                             <div class="usecase-benefit">
-                                <div class="usecase-benefit-icon">🧯</div>
+                                <div class="usecase-benefit-icon">&#129519;</div>
                                 <div>
                                     <h4>Playbook-ready actions</h4>
                                     <p>Actioner proposes the next step—recovery plan, exec alignment, escalation path.</p>
@@ -2099,27 +1582,27 @@
                 <div class="usecase-grid">
                     <div class="usecase-text">
                         <h3>Walk into QBRs with the full story</h3>
-                        <p>Actioner compiles the narrative: progress, usage, tickets, outcomes, and next-quarter plan—so you don’t spend hours preparing a deck.</p>
+                        <p>Actioner compiles the narrative: progress, usage, tickets, outcomes, and next-quarter plan—so you don't spend hours preparing a deck.</p>
                         <div class="usecase-benefits">
                             <div class="usecase-benefit">
-                                <div class="usecase-benefit-icon">📚</div>
+                                <div class="usecase-benefit-icon">&#128218;</div>
                                 <div>
                                     <h4>Auto-assembled highlights</h4>
                                     <p>Wins, blockers, and the biggest changes are summarized with links to evidence.</p>
                                 </div>
                             </div>
                             <div class="usecase-benefit">
-                                <div class="usecase-benefit-icon">🎯</div>
+                                <div class="usecase-benefit-icon">&#127919;</div>
                                 <div>
                                     <h4>Goals and outcomes in one place</h4>
                                     <p>Keep the review anchored on what the customer is trying to achieve.</p>
                                 </div>
                             </div>
                             <div class="usecase-benefit">
-                                <div class="usecase-benefit-icon">🗺️</div>
+                                <div class="usecase-benefit-icon">&#128506;</div>
                                 <div>
                                     <h4>Next-quarter plan drafted</h4>
-                                    <p>Actioner suggests milestones, owners, and commitments based on what’s missing.</p>
+                                    <p>Actioner suggests milestones, owners, and commitments based on what's missing.</p>
                                 </div>
                             </div>
                         </div>
@@ -2163,7 +1646,7 @@
                                     <div class="health-factor">
                                         <div class="health-factor-indicator warning"></div>
                                         <span class="health-factor-label">Support Ticket Trend</span>
-                                        <span class="health-factor-value" style="color: var(--warning);">2 open</span>
+                                        <span class="health-factor-value" style="color: var(--primary-gold);">2 open</span>
                                     </div>
                                     <div class="health-factor">
                                         <div class="health-factor-indicator good"></div>
@@ -2183,35 +1666,36 @@
             </div>
         </div>
     </section>
-<!-- Brief Section -->
+
+    <!-- Brief Section -->
     <section class="brief-section">
         <div class="brief-grid">
             <div class="brief-text">
                 <h2>Your customers, <em>briefed weekly</em></h2>
                 <p>
-                    Every Monday, Actioner delivers an Customer Success Brief—a prioritized list of 
+                    Every Monday, Actioner delivers an Customer Success Brief—a prioritized list of
                     which accounts need attention, why, and what to do about them. No digging required.
                 </p>
-                
+
                 <div class="brief-features">
                     <div class="brief-feature">
-                        <div class="brief-feature-icon">🎯</div>
+                        <div class="brief-feature-icon">&#127919;</div>
                         <div>
                             <h4>Prioritized by impact</h4>
                             <p>Biggest risks and opportunities surface first. Know where to spend your time.</p>
                         </div>
                     </div>
-                    
+
                     <div class="brief-feature">
-                        <div class="brief-feature-icon">📋</div>
+                        <div class="brief-feature-icon">&#128203;</div>
                         <div>
                             <h4>Action-ready format</h4>
                             <p>Each item includes what happened, why it matters, and what to do next.</p>
                         </div>
                     </div>
-                    
+
                     <div class="brief-feature">
-                        <div class="brief-feature-icon">🔗</div>
+                        <div class="brief-feature-icon">&#128279;</div>
                         <div>
                             <h4>Evidence one click away</h4>
                             <p>Every insight links to the source—QBR recording, email thread, support ticket.</p>
@@ -2219,7 +1703,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="brief-preview">
                 <div class="brief-preview-header">
                     <div class="brief-preview-title">
@@ -2252,26 +1736,26 @@
                     <p class="brief-preview-summary">
                         <strong>This week:</strong> 3 accounts need immediate attention. Summit Financial shows churn risk signals—schedule executive alignment. Meridian has strong expansion potential worth $85K.
                     </p>
-                    
+
                     <div class="brief-preview-actions">
                         <div class="brief-preview-action expansion">
-                            <div class="brief-preview-action-icon">📈</div>
+                            <div class="brief-preview-action-icon">&#128200;</div>
                             <div>
                                 <h4>Meridian Healthcare — Expansion</h4>
                                 <p>Ops team wants 50 seats. Set up expansion call with Marcus Johnson.</p>
                             </div>
                         </div>
-                        
+
                         <div class="brief-preview-action risk">
-                            <div class="brief-preview-action-icon">⚠️</div>
+                            <div class="brief-preview-action-icon">&#9888;</div>
                             <div>
                                 <h4>Summit Financial — Churn Risk</h4>
                                 <p>New CFO reviewing vendors. Schedule exec alignment before renewal.</p>
                             </div>
                         </div>
-                        
+
                         <div class="brief-preview-action renewal">
-                            <div class="brief-preview-action-icon">📅</div>
+                            <div class="brief-preview-action-icon">&#128197;</div>
                             <div>
                                 <h4>Cascade Systems — Renewal Prep</h4>
                                 <p>45 days out. Champion confirmed but EB not engaged yet.</p>
@@ -2286,40 +1770,44 @@
     <!-- Results Section -->
     <section class="results-section">
         <div class="section-header">
-            <p class="section-label">Results</p>
-            <h2 class="section-title">What CSMs achieve with <em>Actioner</em></h2>
+            <p class="section-label">The Challenge</p>
+            <h2 class="section-title">Why CSMs <em>need better tools</em></h2>
         </div>
 
         <div class="results-grid">
             <div class="result-card">
-                <div class="result-value">↓30%</div>
-                <div class="result-label">Surprise<br>Escalations</div>
+                <div class="result-value">67%</div>
+                <div class="result-label">of churn shows<br>early warning signs</div>
+                <div class="result-source">Gainsight Research</div>
             </div>
 
             <div class="result-card">
-                <div class="result-value">5 hrs</div>
-                <div class="result-label">Saved Weekly on<br>Prep & Follow-ups</div>
+                <div class="result-value">5-25x</div>
+                <div class="result-label">more expensive to acquire<br>than retain</div>
+                <div class="result-source">Harvard Business Review</div>
             </div>
 
             <div class="result-card">
-                <div class="result-value">Faster</div>
-                <div class="result-label">Time-to-Value<br>Onboarding</div>
+                <div class="result-value">23%</div>
+                <div class="result-label">of customers churn<br>due to poor onboarding</div>
+                <div class="result-source">Wyzowl Research</div>
             </div>
 
             <div class="result-card">
-                <div class="result-value">+18%</div>
-                <div class="result-label">Net Revenue<br>Retention</div>
+                <div class="result-value">70%</div>
+                <div class="result-label">of time spent on<br>manual tasks</div>
+                <div class="result-source">Salesforce Research</div>
             </div>
         </div>
     </section>
-<!-- CTA Section -->
+
+    <!-- CTA Section -->
     <section class="cta-section">
-        <div class="cta-glow"></div>
         <div class="cta-content">
             <h2>Ready for proactive CS in <em>one week?</em></h2>
             <p>Get your first Customer Success Brief in minutes—then stop stitching together health, tickets, and meeting notes by hand.</p>
             <div class="cta-buttons">
-                <a href="#" class="btn btn-primary btn-large">Book a Demo</a>
+                <a href="#" class="btn btn-primary btn-xl">Book a Demo</a>
             </div>
         </div>
     </section>
@@ -2333,39 +1821,57 @@
                 </a>
                 <p>© 2026 Actioner.<br>All rights reserved.</p>
                 <div class="footer-social">
-                    <a href="https://twitter.com/actaborad" title="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-                    <a href="#" title="Slack"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.956 8.834a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zM17.688 8.834a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312zM15.165 18.956a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zM15.165 17.688a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z"/></svg></a>
-                    <a href="https://www.linkedin.com/company/actioner" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-                    <a href="https://www.youtube.com/@actioner" title="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
-                    <a href="mailto:support@actioner.com" title="Email"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
+                    <a href="https://twitter.com/actaborad" title="X (Twitter)">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/actioner" title="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@actioner" title="YouTube">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+                    <a href="mailto:support@actioner.com" title="Email">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                    </a>
                 </div>
             </div>
+
             <div class="footer-column">
                 <h4>Solutions</h4>
                 <ul class="footer-links">
                     <li><a href="for-aes.html">For Account Executives</a></li>
                     <li><a href="for-ams.html">For Account Managers</a></li>
-                    <li><a href="for-csms.html">For Customer Success Managers</a></li>
+                    <li><a href="for-csms.html">For Customer Success</a></li>
                     <li><a href="for-sales-leaders.html">For Sales Leaders</a></li>
                 </ul>
             </div>
+
             <div class="footer-column">
                 <h4>Resources</h4>
                 <ul class="footer-links">
                     <li><a href="https://actioner.com/blog">Blog</a></li>
                     <li><a href="https://actioner.com/help/videos">How to Videos</a></li>
-                    <li><a href="https://actioner.com/manifesto">Manifesto</a></li>
+                    <li><a href="manifesto.html">Manifesto</a></li>
                 </ul>
             </div>
+
             <div class="footer-column">
-                <h4>Learn More</h4>
+                <h4>Company</h4>
                 <ul class="footer-links">
-                    <li><a href="https://actioner.com/about">About Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="https://actioner.com/terms">Terms & Conditions</a></li>
                     <li><a href="https://actioner.com/privacy">Privacy Policy</a></li>
-                    <li><a href="https://actioner.com/disclaimer">Disclaimer</a></li>
                 </ul>
             </div>
+
             <div class="footer-column">
                 <h4>Get in Touch</h4>
                 <ul class="footer-links">
@@ -2381,15 +1887,15 @@
             document.querySelectorAll('.usecase-content').forEach(content => {
                 content.classList.remove('active');
             });
-            
+
             // Remove active from all tabs
             document.querySelectorAll('.usecase-tab').forEach(tab => {
                 tab.classList.remove('active');
             });
-            
+
             // Show selected content
             document.getElementById(id).classList.add('active');
-            
+
             // Activate clicked tab
             event.target.classList.add('active');
         }

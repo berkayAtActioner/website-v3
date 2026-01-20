@@ -1,34 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actioner for Account Executives — Close More, Type Less</title>
-
+    
     <!-- LLM-Friendly Meta Tags -->
-    <meta name="description"
-        content="Actioner for Account Executives: AI-powered deal intelligence that helps AEs close more deals by automating CRM updates, surfacing next best actions, and providing evidence-backed deal insights.">
-    <meta name="keywords"
-        content="AI for account executives, sales AI tool, deal intelligence AE, CRM automation sales, next best action sales, sales productivity AI">
+    <meta name="description" content="Actioner for Account Executives: AI-powered deal intelligence that helps AEs close more deals by automating CRM updates, surfacing next best actions, and providing evidence-backed deal insights.">
+    <meta name="keywords" content="AI for account executives, sales AI tool, deal intelligence AE, CRM automation sales, next best action sales, sales productivity AI">
     <meta name="author" content="Actioner">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://actioner.com/for-aes">
-
+    
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://actioner.com/for-aes">
     <meta property="og:title" content="Actioner for Account Executives — Close More, Type Less">
-    <meta property="og:description"
-        content="AI-powered deal intelligence for AEs. Automate CRM updates, get next best actions, and close more deals.">
+    <meta property="og:description" content="AI-powered deal intelligence for AEs. Automate CRM updates, get next best actions, and close more deals.">
     <meta property="og:site_name" content="Actioner">
-
+    
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@actionercom">
     <meta name="twitter:title" content="Actioner for Account Executives">
     <meta name="twitter:description" content="Close more deals, type less. AI-powered deal intelligence for AEs.">
-
+    
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
@@ -73,1095 +69,105 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Page-specific variables */
-        :root {
-            --accent: #6B9EE5;
-            --accent-light: #7CAEF0;
-            --accent-dim: rgba(107, 158, 229, 0.1);
-            --success-dim: rgba(87, 199, 133, 0.1);
-            --warning-dim: rgba(245, 185, 61, 0.15);
-            --danger-dim: rgba(239, 109, 109, 0.1);
-            --border: #E5E7EB;
-            --border-dark: rgba(255, 255, 255, 0.1);
-        }
+        /* Page-specific styles for AE hero visual */
+        .hero-visual { position: relative; }
+        .hero-phone { background: white; border: 1px solid var(--border-light); border-radius: 24px; overflow: hidden; box-shadow: var(--shadow-xl); max-width: 380px; margin: 0 auto; }
+        .phone-header { padding: 16px 20px; background: var(--bg-tertiary); border-bottom: 1px solid var(--border-light); display: flex; align-items: center; gap: 12px; }
+        .phone-avatar { width: 40px; height: 40px; background: #e8f0fe; border-radius: 12px; display: flex; align-items: center; justify-content: center; padding: 6px; }
+        .phone-avatar img { width: 100%; height: 100%; object-fit: contain; }
+        .phone-header-text h3 { font-size: 15px; font-weight: 600; }
+        .phone-header-text p { font-size: 12px; color: var(--text-tertiary); }
+        .phone-body { padding: 20px; }
+        .phone-greeting { font-size: 15px; color: var(--text-secondary); margin-bottom: 20px; }
+        .phone-greeting strong { color: var(--text-primary); }
+        .phone-section-title { font-size: 11px; font-weight: 600; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
+        .phone-action-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
+        .phone-action { display: flex; gap: 12px; padding: 14px; background: var(--bg-tertiary); border-radius: 12px; align-items: flex-start; border-left: 3px solid transparent; }
+        .phone-action:first-child { background: rgba(251, 113, 133, 0.08); border-left-color: #fb7185; }
+        .phone-action:last-child { background: rgba(251, 191, 36, 0.08); border-left-color: #fbbf24; }
+        .phone-action-priority { width: 24px; height: 24px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+        .phone-action-priority.high { background: rgba(251, 113, 133, 0.2); color: #fb7185; }
+        .phone-action-priority.medium { background: rgba(251, 191, 36, 0.2); color: #d97706; }
+        .phone-action-priority.low { background: rgba(99, 102, 241, 0.15); color: #6366f1; }
+        .phone-action-content h4 { font-size: 13px; font-weight: 600; margin-bottom: 2px; }
+        .phone-action-content p { font-size: 12px; color: var(--text-tertiary); }
+        .phone-deal-summary { background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(99, 102, 241, 0.04) 100%); border-radius: 12px; padding: 16px; border: 1px solid rgba(99, 102, 241, 0.15); }
+        .phone-deal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+        .phone-deal-name { font-size: 14px; font-weight: 600; }
+        .phone-deal-amount { font-size: 14px; font-weight: 700; color: #6366f1; }
+        .phone-deal-insight { font-size: 13px; color: var(--text-secondary); margin-bottom: 10px; }
+        .phone-deal-evidence { font-size: 11px; color: #6366f1; display: flex; align-items: center; gap: 4px; }
+
+        .floating-card { position: absolute; background: white; border-radius: 12px; padding: 14px 18px; box-shadow: var(--shadow-xl); border: 1px solid var(--border-light); animation: float 6s ease-in-out infinite; }
+        .floating-card.left { left: -60px; top: 20%; animation-delay: -2s; }
+        .floating-card.right { right: -40px; top: 50%; animation-delay: -4s; }
+        .floating-card.bottom { left: 10%; bottom: 5%; animation-delay: 0s; }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        .floating-card-content { display: flex; align-items: center; gap: 10px; }
+        .floating-card-icon { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 16px; }
+        .floating-card-icon.green { background: var(--success-dim); }
+        .floating-card-icon.purple { background: var(--accent-dim); }
+        .floating-card-icon.yellow { background: var(--warning-dim); }
+        .floating-card-text { font-size: 13px; font-weight: 600; }
+        .floating-card-text span { display: block; font-size: 11px; font-weight: 400; color: var(--text-tertiary); }
+
+        /* Page-specific section styles */
+        .how-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; max-width: 1000px; margin: 0 auto; }
+        .how-step { text-align: center; padding: 32px 24px; }
+        .how-step-number { width: 48px; height: 48px; background: var(--primary-coral); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 20px; margin: 0 auto 20px; }
+        .how-step h3 { font-size: 18px; font-weight: 600; margin-bottom: 10px; }
+        .how-step p { font-size: 15px; color: var(--text-secondary); line-height: 1.6; }
+        .how-step-time { display: inline-flex; align-items: center; gap: 6px; margin-top: 16px; font-size: 13px; color: var(--success); font-weight: 500; }
+
+        .value-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 1000px; margin: 0 auto; }
+        .value-card { background: white; border: 1px solid var(--border-light); border-radius: 16px; padding: 32px; transition: all 0.3s ease; }
+        .value-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--primary-coral); }
+        .value-card-icon { width: 48px; height: 48px; background: var(--accent-dim); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 24px; }
+        .value-card h3 { font-size: 20px; font-weight: 600; margin-bottom: 10px; }
+        .value-card > p { font-size: 15px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 20px; }
+        .value-card-example { background: var(--bg-tertiary); border-radius: 10px; padding: 14px 16px; font-size: 13px; color: var(--text-secondary); border-left: 3px solid var(--primary-coral); }
+        .value-card-example strong { color: var(--text-primary); }
+
+        .usecases-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 1100px; margin: 0 auto; }
+        .usecase-card { background: white; border: 1px solid var(--border-light); border-radius: 16px; padding: 28px; transition: all 0.3s ease; }
+        .usecase-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--primary-coral); }
+        .usecase-card-emoji { font-size: 32px; margin-bottom: 16px; }
+        .usecase-card h3 { font-size: 18px; font-weight: 600; margin-bottom: 10px; }
+        .usecase-card p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
+
+        .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 1100px; margin: 0 auto; }
+        .testimonial-card { background: white; border: 1px solid var(--border-light); border-radius: 16px; padding: 28px; }
+        .testimonial-stars { display: flex; gap: 2px; margin-bottom: 16px; }
+        .testimonial-stars svg { width: 18px; height: 18px; color: #fbbf24; fill: #fbbf24; }
+        .testimonial-quote { font-size: 15px; line-height: 1.7; margin-bottom: 20px; color: var(--text-secondary); }
+        .testimonial-author { display: flex; align-items: center; gap: 12px; }
+        .testimonial-avatar { width: 44px; height: 44px; background: linear-gradient(135deg, var(--primary-coral) 0%, var(--primary-coral-light) 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px; color: white; }
+        .testimonial-name { font-size: 14px; font-weight: 600; }
+        .testimonial-title { font-size: 13px; color: var(--text-tertiary); }
+
+        .final-cta { padding: 100px 48px; background: var(--bg-dark); color: white; text-align: center; }
+        .final-cta-content { max-width: 600px; margin: 0 auto; }
+        .final-cta h2 { font-family: var(--font-display); font-size: clamp(32px, 4vw, 44px); font-weight: 400; line-height: 1.2; margin-bottom: 16px; }
+        .final-cta h2 em { font-style: italic; color: var(--primary-coral-light); }
+        .final-cta > p { font-size: 17px; color: rgba(255,255,255,0.7); margin-bottom: 32px; }
+        .final-cta-buttons { display: flex; gap: 12px; justify-content: center; margin-bottom: 20px; }
+        .final-cta .btn-primary { background: white; color: var(--bg-dark); }
+        .final-cta .btn-primary:hover { background: var(--bg-tertiary); }
+        .final-cta .btn-secondary { background: transparent; border-color: rgba(255,255,255,0.3); color: white; }
+        .final-cta-note { font-size: 13px; color: rgba(255,255,255,0.5); }
 
-        .nav-dropdown-item.active {
-            background: var(--accent-dim);
-            color: var(--accent);
-        }
-
-        .nav-cta {
-            display: flex;
-            gap: 12px;
-            align-items: center;
-        }
-
-        .btn {
-            padding: 10px 20px;
-            border-radius: 24px;
-            font-size: 14px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.2s ease;
-            cursor: pointer;
-            border: none;
-            font-family: var(--font-body);
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .btn-ghost {
-            background: transparent;
-            color: var(--text-secondary);
-        }
-
-        .btn-ghost:hover {
-            color: var(--text-primary);
-        }
-
-        .btn-primary {
-            background: var(--accent);
-            color: white;
-        }
-
-        .btn-primary:hover {
-            background: var(--primary-blue-dark);
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(107, 158, 229, 0.3);
-        }
-
-        .btn-coral {
-            background: var(--primary-coral);
-            color: white;
-        }
-
-        .btn-coral:hover {
-            background: var(--primary-coral-dark);
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(239, 109, 109, 0.3);
-        }
-
-        .btn-secondary {
-            background: white;
-            color: var(--text-primary);
-            border: 1px solid var(--border-dark);
-        }
-
-        .btn-secondary:hover {
-            background: var(--bg-tertiary);
-        }
-
-        .btn-large {
-            padding: 14px 28px;
-            font-size: 16px;
-        }
-
-        .btn-xl {
-            padding: 18px 36px;
-            font-size: 17px;
-            border-radius: 28px;
-        }
-
-        /* Hero */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            padding: 120px 48px 80px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.08) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(16, 185, 129, 0.06) 0%, transparent 40%);
-        }
-
-        .hero-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1.1fr;
-            gap: 60px;
-            align-items: center;
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero-text {
-            max-width: 520px;
-        }
-
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 6px 14px;
-            background: var(--success-dim);
-            border: 1px solid rgba(16, 185, 129, 0.2);
-            border-radius: 100px;
-            font-size: 13px;
-            font-weight: 600;
-            color: var(--success);
-            margin-bottom: 24px;
-        }
-
-        .hero h1 {
-            font-family: var(--font-display);
-            font-size: clamp(40px, 5vw, 56px);
-            font-weight: 400;
-            line-height: 1.1;
-            margin-bottom: 20px;
-        }
-
-        .hero h1 em {
-            font-style: italic;
-            color: var(--primary-coral);
-        }
-
-        .hero-subtitle {
-            font-size: 18px;
-            color: var(--text-secondary);
-            line-height: 1.7;
-            margin-bottom: 32px;
-        }
-
-        .hero-cta-group {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            margin-bottom: 32px;
-        }
-
-        .hero-cta-row {
-            display: flex;
-            gap: 12px;
-            align-items: center;
-        }
-
-        .hero-cta-note {
-            font-size: 13px;
-            color: var(--text-muted);
-            display: flex;
-            align-items: center;
-            gap: 16px;
-        }
-
-        .hero-cta-note span {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .hero-cta-note svg {
-            width: 16px;
-            height: 16px;
-            color: var(--success);
-        }
-
-        .hero-social-proof {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            padding-top: 24px;
-            border-top: 1px solid var(--border);
-        }
-
-        .avatar-stack {
-            display: flex;
-        }
-
-        .avatar-placeholder {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            border: 2px solid white;
-            margin-left: -10px;
-            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 12px;
-            font-weight: 700;
-            color: white;
-        }
-
-        .avatar-placeholder:first-child {
-            margin-left: 0;
-        }
-
-        .hero-social-text {
-            font-size: 14px;
-            color: var(--text-secondary);
-        }
-
-        .hero-social-text strong {
-            color: var(--text-primary);
-        }
-
-        /* Hero Visual */
-        .hero-visual {
-            position: relative;
-        }
-
-        .hero-phone {
-            background: white;
-            border: 1px solid var(--border);
-            border-radius: 24px;
-            overflow: hidden;
-            box-shadow: var(--shadow-lg);
-            max-width: 380px;
-            margin: 0 auto;
-        }
-
-        .phone-header {
-            padding: 16px 20px;
-            background: var(--bg-tertiary);
-            border-bottom: 1px solid var(--border);
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .phone-avatar {
-            width: 40px;
-            height: 40px;
-            background: #e8f0fe;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 6px;
-        }
-
-        .phone-avatar img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-
-        .phone-header-text h3 {
-            font-size: 15px;
-            font-weight: 600;
-        }
-
-        .phone-header-text p {
-            font-size: 12px;
-            color: var(--text-muted);
-        }
-
-        .phone-body {
-            padding: 20px;
-        }
-
-        .phone-greeting {
-            font-size: 15px;
-            color: var(--text-secondary);
-            margin-bottom: 20px;
-        }
-
-        .phone-greeting strong {
-            color: var(--text-primary);
-        }
-
-        .phone-section-title {
-            font-size: 11px;
-            font-weight: 600;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 12px;
-        }
-
-        .phone-action-list {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-bottom: 24px;
-        }
-
-        .phone-action {
-            display: flex;
-            gap: 12px;
-            padding: 14px;
-            background: var(--bg-tertiary);
-            border-radius: 12px;
-            align-items: flex-start;
-            border-left: 3px solid transparent;
-        }
-
-        .phone-action:first-child {
-            background: rgba(251, 113, 133, 0.08);
-            border-left-color: #fb7185;
-        }
-
-        .phone-action:last-child {
-            background: rgba(251, 191, 36, 0.08);
-            border-left-color: #fbbf24;
-        }
-
-        .phone-action-priority {
-            width: 24px;
-            height: 24px;
-            border-radius: 6px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 12px;
-            font-weight: 700;
-            flex-shrink: 0;
-        }
-
-        .phone-action-priority.high {
-            background: rgba(251, 113, 133, 0.2);
-            color: #fb7185;
-        }
-
-        .phone-action-priority.medium {
-            background: rgba(251, 191, 36, 0.2);
-            color: #d97706;
-        }
-
-        .phone-action-priority.low {
-            background: rgba(99, 102, 241, 0.15);
-            color: #6366f1;
-        }
-
-        .phone-action-content h4 {
-            font-size: 13px;
-            font-weight: 600;
-            margin-bottom: 2px;
-        }
-
-        .phone-action-content p {
-            font-size: 12px;
-            color: var(--text-muted);
-        }
-
-        .phone-deal-summary {
-            background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(99, 102, 241, 0.04) 100%);
-            border-radius: 12px;
-            padding: 16px;
-            border: 1px solid rgba(99, 102, 241, 0.15);
-        }
-
-        .phone-deal-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 8px;
-        }
-
-        .phone-deal-name {
-            font-size: 14px;
-            font-weight: 600;
-        }
-
-        .phone-deal-amount {
-            font-size: 14px;
-            font-weight: 700;
-            color: #6366f1;
-        }
-
-        .phone-deal-insight {
-            font-size: 13px;
-            color: var(--text-secondary);
-            margin-bottom: 10px;
-        }
-
-        .phone-deal-evidence {
-            font-size: 11px;
-            color: #6366f1;
-            display: flex;
-            align-items: center;
-            gap: 4px;
-        }
-
-        .floating-card {
-            position: absolute;
-            background: white;
-            border-radius: 12px;
-            padding: 14px 18px;
-            box-shadow: var(--shadow-lg);
-            border: 1px solid var(--border);
-            animation: float 6s ease-in-out infinite;
-        }
-
-        .floating-card.left {
-            left: -60px;
-            top: 20%;
-            animation-delay: -2s;
-        }
-
-        .floating-card.right {
-            right: -40px;
-            top: 50%;
-            animation-delay: -4s;
-        }
-
-        .floating-card.bottom {
-            left: 10%;
-            bottom: 5%;
-            animation-delay: 0s;
-        }
-
-        @keyframes float {
-
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-
-        .floating-card-content {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .floating-card-icon {
-            width: 32px;
-            height: 32px;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 16px;
-        }
-
-        .floating-card-icon.green {
-            background: var(--success-dim);
-        }
-
-        .floating-card-icon.purple {
-            background: var(--accent-dim);
-        }
-
-        .floating-card-icon.yellow {
-            background: var(--warning-dim);
-        }
-
-        .floating-card-text {
-            font-size: 13px;
-            font-weight: 600;
-        }
-
-        .floating-card-text span {
-            display: block;
-            font-size: 11px;
-            font-weight: 400;
-            color: var(--text-muted);
-        }
-
-        /* Sections */
-        .section {
-            padding: 100px 48px;
-        }
-
-        .section.alt {
-            background: var(--bg-tertiary);
-        }
-
-        .section.dark {
-            background: var(--bg-dark);
-            color: white;
-        }
-
-        .section-header {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto 60px;
-        }
-
-        .section-label {
-            font-size: 13px;
-            color: var(--primary-coral);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-
-        .section-title {
-            font-family: var(--font-display);
-            font-size: clamp(28px, 3.5vw, 44px);
-            font-weight: 400;
-            line-height: 1.2;
-            margin-bottom: 16px;
-            white-space: nowrap;
-        }
-
-        .section-title em {
-            font-style: italic;
-            color: var(--primary-coral);
-        }
-
-        .section-subtitle {
-            font-size: 17px;
-            color: var(--text-secondary);
-            line-height: 1.6;
-        }
-
-        /* How It Works */
-        .how-steps {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 32px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .how-step {
-            text-align: center;
-            padding: 32px 24px;
-        }
-
-        .how-step-number {
-            width: 48px;
-            height: 48px;
-            background: var(--primary-coral);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: var(--font-display);
-            font-size: 20px;
-            margin: 0 auto 20px;
-        }
-
-        .how-step h3 {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-
-        .how-step p {
-            font-size: 15px;
-            color: var(--text-secondary);
-            line-height: 1.6;
-        }
-
-        .how-step-time {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            margin-top: 16px;
-            font-size: 13px;
-            color: var(--success);
-            font-weight: 500;
-        }
-
-        /* Value Props */
-        .value-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 24px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .value-card {
-            background: white;
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 32px;
-            transition: all 0.3s ease;
-        }
-
-        .value-card:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-md);
-            border-color: var(--primary-coral);
-        }
-
-        .value-card-icon {
-            width: 48px;
-            height: 48px;
-            background: var(--accent-dim);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-            font-size: 24px;
-        }
-
-        .value-card h3 {
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-
-        .value-card>p {
-            font-size: 15px;
-            color: var(--text-secondary);
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-        .value-card-example {
-            background: var(--bg-tertiary);
-            border-radius: 10px;
-            padding: 14px 16px;
-            font-size: 13px;
-            color: var(--text-secondary);
-            border-left: 3px solid var(--primary-coral);
-        }
-
-        .value-card-example strong {
-            color: var(--text-primary);
-        }
-
-        /* Use Cases */
-        .usecases-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        .usecase-card {
-            background: white;
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 28px;
-            transition: all 0.3s ease;
-        }
-
-        .usecase-card:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-md);
-            border-color: var(--primary-coral);
-        }
-
-        .usecase-card-emoji {
-            font-size: 32px;
-            margin-bottom: 16px;
-        }
-
-        .usecase-card h3 {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-
-        .usecase-card p {
-            font-size: 14px;
-            color: var(--text-secondary);
-            line-height: 1.6;
-        }
-
-        /* Pricing */
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .pricing-card {
-            background: white;
-            border: 2px solid var(--border);
-            border-radius: 20px;
-            padding: 32px;
-            position: relative;
-            transition: all 0.3s ease;
-        }
-
-        .pricing-card:hover {
-            transform: translateY(-4px);
-        }
-
-        .pricing-card.featured {
-            border-color: var(--primary-coral);
-            box-shadow: 0 8px 40px rgba(239, 109, 109, 0.2);
-        }
-
-        .pricing-card.featured::before {
-            content: 'Most Popular';
-            position: absolute;
-            top: -12px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--primary-coral);
-            color: white;
-            font-size: 11px;
-            font-weight: 600;
-            padding: 4px 14px;
-            border-radius: 100px;
-        }
-
-        .pricing-card-name {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 8px;
-        }
-
-        .pricing-card-price {
-            display: flex;
-            align-items: baseline;
-            gap: 4px;
-            margin-bottom: 8px;
-        }
-
-        .pricing-card-price .amount {
-            font-family: var(--font-display);
-            font-size: 40px;
-        }
-
-        .pricing-card-price .period {
-            font-size: 15px;
-            color: var(--text-muted);
-        }
-
-        .pricing-card-desc {
-            font-size: 14px;
-            color: var(--text-secondary);
-            margin-bottom: 24px;
-            padding-bottom: 24px;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .pricing-features {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            margin-bottom: 28px;
-        }
-
-        .pricing-feature {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 14px;
-        }
-
-        .pricing-feature svg {
-            width: 18px;
-            height: 18px;
-            color: var(--success);
-            flex-shrink: 0;
-        }
-
-        .pricing-feature.disabled {
-            color: var(--text-muted);
-        }
-
-        .pricing-feature.disabled svg {
-            color: var(--text-muted);
-        }
-
-        .pricing-cta {
-            width: 100%;
-        }
-
-        /* Testimonials */
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        .testimonial-card {
-            background: white;
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 28px;
-        }
-
-        .testimonial-stars {
-            display: flex;
-            gap: 2px;
-            margin-bottom: 16px;
-        }
-
-        .testimonial-stars svg {
-            width: 18px;
-            height: 18px;
-            color: #fbbf24;
-            fill: #fbbf24;
-        }
-
-        .testimonial-quote {
-            font-size: 15px;
-            line-height: 1.7;
-            margin-bottom: 20px;
-            color: var(--text-secondary);
-        }
-
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .testimonial-avatar {
-            width: 44px;
-            height: 44px;
-            background: linear-gradient(135deg, var(--primary-coral) 0%, var(--primary-coral-light) 100%);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 16px;
-            color: white;
-        }
-
-        .testimonial-name {
-            font-size: 14px;
-            font-weight: 600;
-        }
-
-        .testimonial-title {
-            font-size: 13px;
-            color: var(--text-muted);
-        }
-
-        /* Final CTA */
-        .final-cta {
-            padding: 100px 48px;
-            background: var(--bg-dark);
-            color: white;
-            text-align: center;
-        }
-
-        .final-cta-content {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .final-cta h2 {
-            font-family: var(--font-display);
-            font-size: clamp(32px, 4vw, 44px);
-            font-weight: 400;
-            line-height: 1.2;
-            margin-bottom: 16px;
-        }
-
-        .final-cta h2 em {
-            font-style: italic;
-            color: var(--primary-coral-light);
-        }
-
-        .final-cta>p {
-            font-size: 17px;
-            color: rgba(255, 255, 255, 0.7);
-            margin-bottom: 32px;
-        }
-
-        .final-cta-buttons {
-            display: flex;
-            gap: 12px;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-
-        .final-cta .btn-primary {
-            background: white;
-            color: var(--bg-dark);
-        }
-
-        .final-cta .btn-primary:hover {
-            background: var(--bg-tertiary);
-        }
-
-        .final-cta .btn-secondary {
-            background: transparent;
-            border-color: rgba(255, 255, 255, 0.3);
-            color: white;
-        }
-
-        .final-cta-note {
-            font-size: 13px;
-            color: rgba(255, 255, 255, 0.5);
-        }
-
-        /* Footer */
-        footer {
-            padding: 60px 48px 40px;
-            background: var(--bg-dark);
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: white;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-            gap: 48px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .footer-brand {
-            max-width: 280px;
-        }
-
-        .footer-brand .logo {
-            color: white;
-            margin-bottom: 16px;
-        }
-
-        .footer-brand p {
-            font-size: 14px;
-            color: rgba(255, 255, 255, 0.6);
-            line-height: 1.6;
-        }
-
-        .footer-brand .footer-social {
-            margin-top: 20px;
-        }
-
-        .footer-column h4 {
-            font-size: 13px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: rgba(255, 255, 255, 0.8);
-            margin-bottom: 20px;
-        }
-
-        .footer-links {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .footer-links a {
-            color: rgba(255, 255, 255, 0.5);
-            text-decoration: none;
-            font-size: 14px;
-            transition: color 0.2s;
-        }
-
-        .footer-links a:hover {
-            color: white;
-        }
-
-        .footer-social {
-            display: flex;
-            gap: 12px;
-        }
-
-        .footer-social a {
-            width: 36px;
-            height: 36px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: rgba(255, 255, 255, 0.6);
-            transition: all 0.2s;
-        }
-
-        .footer-social a:hover {
-            background: var(--primary-coral);
-            color: white;
-        }
-
-        /* Responsive */
         @media (max-width: 1024px) {
-            nav {
-                padding: 16px 24px;
-            }
-
-            .nav-links {
-                display: none;
-            }
-
-            .hero {
-                padding: 100px 24px 60px;
-            }
-
-            .hero-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .hero-text {
-                max-width: 100%;
-            }
-
-            .hero-cta-row {
-                justify-content: center;
-            }
-
-            .hero-cta-note {
-                justify-content: center;
-            }
-
-            .hero-social-proof {
-                justify-content: center;
-            }
-
-            .hero-visual {
-                display: none;
-            }
-
-            .section {
-                padding: 60px 24px;
-            }
-
-            .how-steps,
-            .value-grid,
-            .usecases-grid,
-            .pricing-grid,
-            .testimonials-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
-            }
+            .hero-visual { display: none; }
+            .how-steps, .value-grid, .usecases-grid, .testimonials-grid { grid-template-columns: 1fr; }
         }
-
         @media (max-width: 768px) {
-            .hero-cta-row {
-                flex-direction: column;
-            }
-
-            .hero-cta-note {
-                flex-direction: column;
-                gap: 8px;
-            }
-
-            .final-cta-buttons {
-                flex-direction: column;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-bottom {
-                flex-direction: column;
-                gap: 20px;
-                text-align: center;
-            }
+            .final-cta-buttons { flex-direction: column; }
         }
     </style>
 </head>
-
 <body>
     <!-- Navigation -->
     <nav>
@@ -1178,14 +184,10 @@
                 </span>
                 <div class="nav-dropdown-menu">
                     <div class="nav-dropdown-content">
-                        <a href="for-aes.html" class="nav-dropdown-item">For Account Executives<span>Close more, type
-                                less</span></a>
-                        <a href="for-ams.html" class="nav-dropdown-item">For Account Managers<span>Renew & expand with
-                                confidence</span></a>
-                        <a href="for-csms.html" class="nav-dropdown-item">For Customer Success Managers<span>Stay
-                                proactive, not reactive</span></a>
-                        <a href="for-sales-leaders.html" class="nav-dropdown-item">For Sales Leaders<span>Forecast with
-                                receipts</span></a>
+                        <a href="for-aes.html" class="nav-dropdown-item">For Account Executives<span>Close more, type less</span></a>
+                        <a href="for-ams.html" class="nav-dropdown-item">For Account Managers<span>Renew & expand with confidence</span></a>
+                        <a href="for-csms.html" class="nav-dropdown-item">For Customer Success Managers<span>Stay proactive, not reactive</span></a>
+                        <a href="for-sales-leaders.html" class="nav-dropdown-item">For Sales Leaders<span>Forecast with receipts</span></a>
                     </div>
                 </div>
             </li>
@@ -1198,12 +200,9 @@
                 </span>
                 <div class="nav-dropdown-menu">
                     <div class="nav-dropdown-content">
-                        <a href="https://actioner.com/blog" class="nav-dropdown-item">Blog<span>Articles, insights, and
-                                updates</span></a>
-                        <a href="https://actioner.com/help/videos" class="nav-dropdown-item">How to Videos<span>Learn
-                                how to use Actioner</span></a>
-                        <a href="manifesto.html" class="nav-dropdown-item">Manifesto<span>Our vision for revenue
-                                execution</span></a>
+                        <a href="https://actioner.com/blog" class="nav-dropdown-item">Blog<span>Articles, insights, and updates</span></a>
+                        <a href="https://actioner.com/help/videos" class="nav-dropdown-item">How to Videos<span>Learn how to use Actioner</span></a>
+                        <a href="manifesto.html" class="nav-dropdown-item">Manifesto<span>Our vision for revenue execution</span></a>
                     </div>
                 </div>
             </li>
@@ -1221,91 +220,38 @@
         <div class="hero-content">
             <div class="hero-text">
                 <div class="hero-badge">✨ Free forever plan available</div>
-                <h1>Your AI assistant that <em>actually</em> helps you to close deals</h1>
-                <p class="hero-subtitle">Stop typing into CRM. Start closing. Actioner processes your emails,
-                    suggests what to do next, and keeps your deals moving.</p>
+                <h1>Your AI assistant that <em>actually</em><br>closes deals</h1>
+                <p class="hero-subtitle">Stop typing into Salesforce. Start closing. Actioner reads your emails, tells you what to do next, and keeps your deals moving—automatically.</p>
                 <div class="hero-cta-group">
                     <div class="hero-cta-row">
                         <a href="#" class="btn btn-primary btn-xl">Book a demo</a>
                     </div>
                     <div class="hero-cta-note">
-                        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                                <polyline points="22 4 12 14.01 9 11.01" />
-                            </svg>No credit card required</span>
-                        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                                <polyline points="22 4 12 14.01 9 11.01" />
-                            </svg>Works with or without your team</span>
-                        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-                                <polyline points="22 4 12 14.01 9 11.01" />
-                            </svg>See value in minutes</span>
+                        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Works without your team</span>
+                        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>See value in 5 minutes</span>
                     </div>
                 </div>
-                <div class="hero-social-proof">
-                    <div class="avatar-stack">
-                        <div class="avatar-placeholder">JM</div>
-                        <div class="avatar-placeholder">SC</div>
-                        <div class="avatar-placeholder">RK</div>
-                        <div class="avatar-placeholder">LP</div>
-                        <div class="avatar-placeholder">+</div>
-                    </div>
-                    <div class="hero-social-text">Join the reps who closed more last quarter</div>
-                </div>
+
             </div>
             <div class="hero-visual">
-                <div class="floating-card left">
-                    <div class="floating-card-content">
-                        <div class="floating-card-icon green">✓</div>
-                        <div class="floating-card-text">CRM Updated<span>Saved 12 min</span></div>
-                    </div>
-                </div>
-                <div class="floating-card right">
-                    <div class="floating-card-content">
-                        <div class="floating-card-icon purple">💡</div>
-                        <div class="floating-card-text">New Signal<span>Budget approved</span></div>
-                    </div>
-                </div>
-                <div class="floating-card bottom">
-                    <div class="floating-card-content">
-                        <div class="floating-card-icon yellow">⚡</div>
-                        <div class="floating-card-text">Action Due<span>Follow up with Sarah</span></div>
-                    </div>
-                </div>
+                <div class="floating-card left"><div class="floating-card-content"><div class="floating-card-icon green">✓</div><div class="floating-card-text">CRM Updated<span>Saved 12 min</span></div></div></div>
+                <div class="floating-card right"><div class="floating-card-content"><div class="floating-card-icon purple">💡</div><div class="floating-card-text">New Signal<span>Budget approved</span></div></div></div>
+                <div class="floating-card bottom"><div class="floating-card-content"><div class="floating-card-icon yellow">⚡</div><div class="floating-card-text">Action Due<span>Follow up with Sarah</span></div></div></div>
                 <div class="hero-phone">
                     <div class="phone-header">
-                        <div class="phone-avatar"><img src="Actioner-logo.png" alt="Actioner"
-                                style="width: 100%; height: 100%; object-fit: contain;"></div>
-                        <div class="phone-header-text">
-                            <h3>Good morning, Alex</h3>
-                            <p>You have 3 actions today</p>
-                        </div>
+                        <div class="phone-avatar"><img src="Actioner-logo.png" alt="Actioner" style="width: 100%; height: 100%; object-fit: contain;"></div>
+                        <div class="phone-header-text"><h3>Good morning, Alex</h3><p>You have 3 actions today</p></div>
                     </div>
                     <div class="phone-body">
                         <p class="phone-greeting">Here's what needs your attention <strong>right now</strong>:</p>
                         <p class="phone-section-title">Today's Priority Actions</p>
                         <div class="phone-action-list">
-                            <div class="phone-action">
-                                <div class="phone-action-priority high">1</div>
-                                <div class="phone-action-content">
-                                    <h4>Follow up with DataFlow</h4>
-                                    <p>Sarah said she'd have budget approval "by end of week" — that was Friday</p>
-                                </div>
-                            </div>
-                            <div class="phone-action">
-                                <div class="phone-action-priority medium">2</div>
-                                <div class="phone-action-content">
-                                    <h4>Send Summit proposal</h4>
-                                    <p>You promised it by EOD Tuesday — draft is ready</p>
-                                </div>
-                            </div>
+                            <div class="phone-action"><div class="phone-action-priority high">1</div><div class="phone-action-content"><h4>Follow up with DataFlow</h4><p>Sarah said she'd have budget approval "by end of week" — that was Friday</p></div></div>
+                            <div class="phone-action"><div class="phone-action-priority medium">2</div><div class="phone-action-content"><h4>Send Summit proposal</h4><p>You promised it by EOD Tuesday — draft is ready</p></div></div>
                         </div>
                         <div class="phone-deal-summary">
-                            <div class="phone-deal-header"><span class="phone-deal-name">🔥 Hot Deal Alert</span><span
-                                    class="phone-deal-amount">$145K</span></div>
-                            <p class="phone-deal-insight">TechVentures mentioned <strong>competitor evaluation ending
-                                    Friday</strong>. This could close this week.</p>
+                            <div class="phone-deal-header"><span class="phone-deal-name">🔥 Hot Deal Alert</span><span class="phone-deal-amount">$145K</span></div>
+                            <p class="phone-deal-insight">TechVentures mentioned <strong>competitor evaluation ending Friday</strong>. This could close this week.</p>
                             <span class="phone-deal-evidence">📎 View email evidence →</span>
                         </div>
                     </div>
@@ -1319,28 +265,25 @@
         <div class="section-header">
             <p class="section-label">How It Works</p>
             <h2 class="section-title">Up and running in <em>5 minutes</em></h2>
-            <p class="section-subtitle">No IT. No CRM admin. No team adoption required. Just you, your email, and
-                instant deal intelligence.</p>
+            <p class="section-subtitle">No IT. No CRM admin. No team adoption required. Just you, your email, and instant deal intelligence.</p>
         </div>
         <div class="how-steps">
             <div class="how-step">
                 <div class="how-step-number">1</div>
                 <h3>Connect your email</h3>
-                <p>One click to connect Gmail or Outlook. Actioner analyzes (only) your customer emails.</p>
+                <p>One click to connect Gmail or Outlook. Actioner reads your customer emails (and only customer emails).</p>
                 <span class="how-step-time">⚡ 30 seconds</span>
             </div>
             <div class="how-step">
                 <div class="how-step-number">2</div>
                 <h3>AI finds your deals</h3>
-                <p>Actioner automatically identifies your active deals, key stakeholders, and current status—no data
-                    entry.</p>
+                <p>Actioner automatically identifies your active deals, key stakeholders, and current status—no data entry.</p>
                 <span class="how-step-time">⚡ 2 minutes</span>
             </div>
             <div class="how-step">
                 <div class="how-step-number">3</div>
                 <h3>Get daily actions</h3>
-                <p>Every morning, see exactly what you need to do: follow-ups to send, commitments to keep, deals to
-                    push.</p>
+                <p>Every morning, see exactly what you need to do: follow-ups to send, commitments to keep, deals to push.</p>
                 <span class="how-step-time">⚡ Every day</span>
             </div>
         </div>
@@ -1356,34 +299,26 @@
             <div class="value-card">
                 <div class="value-card-icon">🧠</div>
                 <h3>Never forget a follow-up</h3>
-                <p>AI tracks every commitment you made in every email. When you said "I'll send that over Monday,"
-                    Actioner reminds you Sunday night.</p>
-                <div class="value-card-example"><strong>Example:</strong> "You told Sarah you'd follow up after their
-                    board meeting — that was yesterday. Here's a draft..."</div>
+                <p>AI tracks every commitment you made in every email. When you said "I'll send that over Monday," Actioner reminds you Sunday night.</p>
+                <div class="value-card-example"><strong>Example:</strong> "You told Sarah you'd follow up after their board meeting — that was yesterday. Here's a draft..."</div>
             </div>
             <div class="value-card">
                 <div class="value-card-icon">🎯</div>
                 <h3>Know exactly what to do next</h3>
-                <p>Stop staring at your pipeline wondering what to work on. Actioner tells you the highest-impact action
-                    for every deal, every day.</p>
-                <div class="value-card-example"><strong>Example:</strong> "DataFlow is your hottest deal. Budget was
-                    approved yesterday — strike now."</div>
+                <p>Stop staring at your pipeline wondering what to work on. Actioner tells you the highest-impact action for every deal, every day.</p>
+                <div class="value-card-example"><strong>Example:</strong> "DataFlow is your hottest deal. Budget was approved yesterday — strike now."</div>
             </div>
             <div class="value-card">
                 <div class="value-card-icon">⏱️</div>
                 <h3>Stop typing into Salesforce</h3>
-                <p>Actioner writes your CRM updates based on what actually happened in your emails. One-click approve,
-                    and you're done.</p>
-                <div class="value-card-example"><strong>Example:</strong> "Based on today's email: Stage → Proposal,
-                    Close Date → Mar 15. Accept?"</div>
+                <p>Actioner writes your CRM updates based on what actually happened in your emails. One-click approve, and you're done.</p>
+                <div class="value-card-example"><strong>Example:</strong> "Based on today's email: Stage → Proposal, Close Date → Mar 15. Accept?"</div>
             </div>
             <div class="value-card">
                 <div class="value-card-icon">🛡️</div>
                 <h3>Always ready for your 1:1</h3>
-                <p>Walk into every pipeline review prepared. Actioner gives you a deal-by-deal summary with evidence, so
-                    you're never caught off guard.</p>
-                <div class="value-card-example"><strong>Example:</strong> "Here's your 1:1 cheat sheet: 3 deals
-                    advancing, 2 need attention, and the receipts."</div>
+                <p>Walk into every pipeline review prepared. Actioner gives you a deal-by-deal summary with evidence, so you're never caught off guard.</p>
+                <div class="value-card-example"><strong>Example:</strong> "Here's your 1:1 cheat sheet: 3 deals advancing, 2 need attention, and the receipts."</div>
             </div>
         </div>
     </section>
@@ -1395,36 +330,12 @@
             <h2 class="section-title">How AEs use Actioner <em>every day</em></h2>
         </div>
         <div class="usecases-grid">
-            <div class="usecase-card">
-                <div class="usecase-card-emoji">☀️</div>
-                <h3>Morning: Plan your day</h3>
-                <p>See your prioritized action list before coffee. Know exactly which deals need attention and why.</p>
-            </div>
-            <div class="usecase-card">
-                <div class="usecase-card-emoji">📧</div>
-                <h3>After calls: Instant capture</h3>
-                <p>Send yourself a voice note or quick email. Actioner turns it into structured deal updates.</p>
-            </div>
-            <div class="usecase-card">
-                <div class="usecase-card-emoji">🎯</div>
-                <h3>Before outreach: Context ready</h3>
-                <p>Pulling up a deal? See full conversation history, stakeholder map, and commitments—instantly.</p>
-            </div>
-            <div class="usecase-card">
-                <div class="usecase-card-emoji">📊</div>
-                <h3>Before 1:1s: Prep done</h3>
-                <p>Your manager asks about a deal? You've got the evidence. Deal brief with status and receipts.</p>
-            </div>
-            <div class="usecase-card">
-                <div class="usecase-card-emoji">🚨</div>
-                <h3>When deals stall: Get unstuck</h3>
-                <p>Deal going quiet? Actioner suggests alternative contacts and re-engagement angles.</p>
-            </div>
-            <div class="usecase-card">
-                <div class="usecase-card-emoji">🏆</div>
-                <h3>End of quarter: Close strong</h3>
-                <p>See which deals can actually close this month based on evidence, not optimism.</p>
-            </div>
+            <div class="usecase-card"><div class="usecase-card-emoji">☀️</div><h3>Morning: Plan your day</h3><p>See your prioritized action list before coffee. Know exactly which deals need attention and why.</p></div>
+            <div class="usecase-card"><div class="usecase-card-emoji">📧</div><h3>After calls: Instant capture</h3><p>Send yourself a voice note or quick email. Actioner turns it into structured deal updates.</p></div>
+            <div class="usecase-card"><div class="usecase-card-emoji">🎯</div><h3>Before outreach: Context ready</h3><p>Pulling up a deal? See full conversation history, stakeholder map, and commitments—instantly.</p></div>
+            <div class="usecase-card"><div class="usecase-card-emoji">📊</div><h3>Before 1:1s: Prep done</h3><p>Your manager asks about a deal? You've got the evidence. Deal brief with status and receipts.</p></div>
+            <div class="usecase-card"><div class="usecase-card-emoji">🚨</div><h3>When deals stall: Get unstuck</h3><p>Deal going quiet? Actioner suggests alternative contacts and re-engagement angles.</p></div>
+            <div class="usecase-card"><div class="usecase-card-emoji">🏆</div><h3>End of quarter: Close strong</h3><p>See which deals can actually close this month based on evidence, not optimism.</p></div>
         </div>
     </section>
 
@@ -1436,85 +347,19 @@
         </div>
         <div class="testimonials-grid">
             <div class="testimonial-card">
-                <div class="testimonial-stars"><svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                    </svg><svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                    </svg><svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                    </svg><svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                    </svg><svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                    </svg></div>
-                <p class="testimonial-quote">"I signed up on my own, didn't tell anyone. Hit 142% of quota last quarter.
-                    Now my whole team uses it."</p>
-                <div class="testimonial-author">
-                    <div class="testimonial-avatar">JM</div>
-                    <div>
-                        <p class="testimonial-name">Jake Morrison</p>
-                        <p class="testimonial-title">Enterprise AE, SaaS Company</p>
-                    </div>
-                </div>
+                <div class="testimonial-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+                <p class="testimonial-quote">"I signed up on my own, didn't tell anyone. Hit 142% of quota last quarter. Now my whole team uses it."</p>
+                <div class="testimonial-author"><div class="testimonial-avatar">JM</div><div><p class="testimonial-name">Jake Morrison</p><p class="testimonial-title">Enterprise AE, SaaS Company</p></div></div>
             </div>
             <div class="testimonial-card">
-                <div class="testimonial-stars"><svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                    </svg><svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                    </svg><svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                    </svg><svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                    </svg><svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                    </svg></div>
-                <p class="testimonial-quote">"The 'never forget a follow-up' thing is real. I used to drop balls
-                    constantly. My close rate is up 23%."</p>
-                <div class="testimonial-author">
-                    <div class="testimonial-avatar">SC</div>
-                    <div>
-                        <p class="testimonial-name">Sarah Chen</p>
-                        <p class="testimonial-title">Senior AE, FinTech</p>
-                    </div>
-                </div>
+                <div class="testimonial-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+                <p class="testimonial-quote">"The 'never forget a follow-up' thing is real. I used to drop balls constantly. My close rate is up 23%."</p>
+                <div class="testimonial-author"><div class="testimonial-avatar">SC</div><div><p class="testimonial-name">Sarah Chen</p><p class="testimonial-title">Senior AE, FinTech</p></div></div>
             </div>
             <div class="testimonial-card">
-                <div class="testimonial-stars"><svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                    </svg><svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                    </svg><svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                    </svg><svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                    </svg><svg viewBox="0 0 24 24">
-                        <path
-                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                    </svg></div>
-                <p class="testimonial-quote">"I get 2 hours back every day. That's 10 hours a week I actually spend
-                    selling now."</p>
-                <div class="testimonial-author">
-                    <div class="testimonial-avatar">RK</div>
-                    <div>
-                        <p class="testimonial-name">Ryan Kim</p>
-                        <p class="testimonial-title">Mid-Market AE, HR Tech</p>
-                    </div>
-                </div>
+                <div class="testimonial-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+                <p class="testimonial-quote">"I get 2 hours back every day. That's 10 hours a week I actually spend selling now."</p>
+                <div class="testimonial-author"><div class="testimonial-avatar">RK</div><div><p class="testimonial-name">Ryan Kim</p><p class="testimonial-title">Mid-Market AE, HR Tech</p></div></div>
             </div>
         </div>
     </section>
@@ -1523,11 +368,11 @@
     <section class="final-cta">
         <div class="final-cta-content">
             <h2><em>Ready</em>&nbsp;to close more and type less?</h2>
-
+            
             <div class="final-cta-buttons">
                 <a href="#" class="btn btn-primary btn-xl">Book a demo</a>
             </div>
-            <p class="final-cta-note">No credit card · No team required · See value in 5 minutes</p>
+            <p class="final-cta-note">No team required · See value in 5 minutes</p>
         </div>
     </section>
 
@@ -1536,63 +381,61 @@
         <div class="footer-grid">
             <div class="footer-brand">
                 <a href="index.html" class="logo">
-                    <img src="Actioner-Horizontal-nav.png" alt="Actioner"
-                        style="height: 32px; width: auto; filter: brightness(0) invert(1);">
+                    <img src="Actioner-Horizontal-nav.png" alt="Actioner" style="height: 32px; width: auto; filter: brightness(0) invert(1);">
                 </a>
                 <p>© 2026 Actioner.<br>All rights reserved.</p>
                 <div class="footer-social">
-                    <a href="https://twitter.com/actaborad" title="X (Twitter)"><svg viewBox="0 0 24 24"
-                            fill="currentColor" width="16" height="16">
-                            <path
-                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                        </svg></a>
-                    <a href="#" title="Slack"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
-                            <path
-                                d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.956 8.834a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zM17.688 8.834a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312zM15.165 18.956a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zM15.165 17.688a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z" />
-                        </svg></a>
-                    <a href="https://www.linkedin.com/company/actioner" title="LinkedIn"><svg viewBox="0 0 24 24"
-                            fill="currentColor" width="16" height="16">
-                            <path
-                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                        </svg></a>
-                    <a href="https://www.youtube.com/@actioner" title="YouTube"><svg viewBox="0 0 24 24"
-                            fill="currentColor" width="16" height="16">
-                            <path
-                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                        </svg></a>
-                    <a href="mailto:support@actioner.com" title="Email"><svg viewBox="0 0 24 24" fill="currentColor"
-                            width="16" height="16">
-                            <path
-                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-                        </svg></a>
+                    <a href="https://twitter.com/actaborad" title="X (Twitter)">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/actioner" title="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@actioner" title="YouTube">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+                    <a href="mailto:support@actioner.com" title="Email">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                    </a>
                 </div>
             </div>
+
             <div class="footer-column">
                 <h4>Solutions</h4>
                 <ul class="footer-links">
                     <li><a href="for-aes.html">For Account Executives</a></li>
                     <li><a href="for-ams.html">For Account Managers</a></li>
-                    <li><a href="for-csms.html">For Customer Success Managers</a></li>
+                    <li><a href="for-csms.html">For Customer Success</a></li>
                     <li><a href="for-sales-leaders.html">For Sales Leaders</a></li>
                 </ul>
             </div>
+
             <div class="footer-column">
                 <h4>Resources</h4>
                 <ul class="footer-links">
                     <li><a href="https://actioner.com/blog">Blog</a></li>
                     <li><a href="https://actioner.com/help/videos">How to Videos</a></li>
-                    <li><a href="https://actioner.com/manifesto">Manifesto</a></li>
+                    <li><a href="manifesto.html">Manifesto</a></li>
                 </ul>
             </div>
+
             <div class="footer-column">
-                <h4>Learn More</h4>
+                <h4>Company</h4>
                 <ul class="footer-links">
-                    <li><a href="https://actioner.com/about">About Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="https://actioner.com/terms">Terms & Conditions</a></li>
                     <li><a href="https://actioner.com/privacy">Privacy Policy</a></li>
-                    <li><a href="https://actioner.com/disclaimer">Disclaimer</a></li>
                 </ul>
             </div>
+
             <div class="footer-column">
                 <h4>Get in Touch</h4>
                 <ul class="footer-links">
@@ -1616,5 +459,4 @@
         });
     </script>
 </body>
-
 </html>

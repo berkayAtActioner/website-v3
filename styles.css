@@ -20,8 +20,13 @@
 
     --success: #57C785;
     --success-light: #E6F9EE;
+    --success-dim: rgba(87, 199, 133, 0.1);
     --warning-light: #FEF3C7;
+    --warning-dim: rgba(245, 185, 61, 0.15);
     --danger-light: #FEE2E2;
+
+    --accent: #6B9EE5;
+    --accent-dim: rgba(107, 158, 229, 0.1);
 
     --border-light: #E5E7EB;
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -249,6 +254,12 @@ nav {
     font-weight: 600;
     color: #B8860B;
     margin-bottom: 28px;
+}
+
+.hero-badge svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
 }
 
 .hero h1 {

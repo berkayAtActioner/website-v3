@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actioner for Account Managers — Renew &amp; expand with confidence</title>
-    
+
     <!-- LLM-Friendly Meta Tags -->
     <meta name="description" content="Actioner for Account Managers: AI-powered account intelligence that helps AMs drive renewals and expansion by surfacing account health signals, renewal risks, and expansion opportunities with evidence.">
     <meta name="keywords" content="AI for account managers, account management AI, renewal management software, expansion revenue AI, account health monitoring, customer retention AI">
     <meta name="author" content="Actioner">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://actioner.com/for-ams">
-    
+
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://actioner.com/for-ams">
     <meta property="og:title" content="Actioner for Account Managers — Renew &amp; Expand with Confidence">
     <meta property="og:description" content="AI-powered account intelligence for AMs. Surface renewal risks, identify expansion opportunities, and drive growth.">
     <meta property="og:site_name" content="Actioner">
-    
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@actionercom">
     <meta name="twitter:title" content="Actioner for Account Managers">
     <meta name="twitter:description" content="Renew and expand with confidence. AI-powered account intelligence for AMs.">
-    
+
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
@@ -72,71 +72,16 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Page-specific CSS variables */
-        :root {
-            --accent: #6B9EE5;
-            --accent-light: #7CAEF0;
-            --accent-dim: rgba(107, 158, 229, 0.1);
-            --accent-glow: rgba(107, 158, 229, 0.3);
-            --success-dim: rgba(87, 199, 133, 0.1);
-            --warning-dim: rgba(245, 185, 61, 0.15);
-            --danger: #EF6D6D;
-            --danger-dim: rgba(239, 109, 109, 0.1);
-            --border: #E5E7EB;
-            --border-dark: rgba(255, 255, 255, 0.1);
-            --bg-card: #FFFFFF;
-            --gradient-hero: linear-gradient(180deg, #FFFFFF 0%, var(--bg-secondary) 100%);
-        }
+        /* ==================== PAGE-SPECIFIC STYLES ==================== */
 
-        body {
-            overflow-x: hidden;
-        }
-
-        /* Page-specific button variants */
-        .btn-ghost {
-            background: transparent;
-            color: var(--text-secondary);
-        }
-
-        .btn-ghost:hover {
-            color: var(--text-primary);
-        }
-
-        .btn-coral {
-            background: var(--primary-coral);
-            color: var(--bg-primary);
-        }
-
-        .btn-coral:hover {
-            background: var(--primary-coral-dark);
-            transform: translateY(-1px);
-            box-shadow: 0 8px 30px rgba(239, 109, 109, 0.3);
-        }
-
-        .btn-large {
-            padding: 16px 32px;
-            font-size: 16px;
-        }
-
-        /* ==================== HERO ==================== */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 140px 48px 80px;
-            position: relative;
-            overflow: hidden;
-            background: var(--gradient-hero);
-        }
-
+        /* Hero Visual Components */
         .hero-grid {
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            background-image: 
+            background-image:
                 linear-gradient(rgba(167, 139, 250, 0.03) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(167, 139, 250, 0.03) 1px, transparent 1px);
             background-size: 60px 60px;
@@ -150,7 +95,7 @@
             transform: translateX(-50%);
             width: 800px;
             height: 800px;
-            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(107, 158, 229, 0.15) 0%, transparent 70%);
             opacity: 0.3;
             filter: blur(80px);
         }
@@ -170,55 +115,6 @@
             max-width: 560px;
         }
 
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 16px;
-            background: var(--accent-dim);
-            border: 1px solid rgba(167, 139, 250, 0.3);
-            border-radius: 100px;
-            font-size: 13px;
-            font-weight: 600;
-            color: var(--accent);
-            margin-bottom: 24px;
-            animation: fadeInUp 0.6s ease;
-        }
-
-        .hero-badge svg {
-            width: 16px;
-            height: 16px;
-        }
-
-        .hero h1 {
-            font-family: var(--font-display);
-            font-size: clamp(40px, 5vw, 56px);
-            font-weight: 400;
-            line-height: 1.1;
-            margin-bottom: 24px;
-            animation: fadeInUp 0.6s ease 0.1s both;
-        }
-
-        .hero h1 em {
-            font-style: italic;
-            color: var(--primary-coral);
-        }
-
-        .hero-subtitle {
-            font-size: 18px;
-            color: var(--text-secondary);
-            line-height: 1.7;
-            margin-bottom: 32px;
-            animation: fadeInUp 0.6s ease 0.2s both;
-        }
-
-        .hero-cta {
-            display: flex;
-            gap: 16px;
-            margin-bottom: 48px;
-            animation: fadeInUp 0.6s ease 0.3s both;
-        }
-
         .hero-stats {
             display: flex;
             gap: 40px;
@@ -232,7 +128,7 @@
         .hero-stat-value {
             font-family: var(--font-display);
             font-size: 32px;
-            color: var(--accent);
+            color: var(--primary-blue);
             margin-bottom: 4px;
         }
 
@@ -253,15 +149,10 @@
             color: var(--text-muted);
         }
 
-        /* Hero Visual */
-        .hero-visual {
-            position: relative;
-            animation: fadeInUp 0.6s ease 0.3s both;
-        }
-
+        /* Hero Card */
         .hero-card {
             background: var(--bg-primary);
-            border: 1px solid var(--border);
+            border: 1px solid var(--border-light);
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 25px 50px rgba(107, 158, 229, 0.15), 0 10px 20px rgba(0, 0, 0, 0.08);
@@ -277,7 +168,7 @@
         .hero-card-header {
             padding: 20px 24px;
             background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--bg-secondary) 100%);
-            border-bottom: 1px solid var(--border);
+            border-bottom: 1px solid var(--border-light);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -307,13 +198,13 @@
             align-items: center;
             margin-bottom: 24px;
             padding-bottom: 20px;
-            border-bottom: 1px solid var(--border);
+            border-bottom: 1px solid var(--border-light);
         }
 
         .account-logo {
             width: 56px;
             height: 56px;
-            background: linear-gradient(135deg, var(--accent) 0%, var(--primary-blue-dark) 100%);
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
             border-radius: 14px;
             display: flex;
             align-items: center;
@@ -336,27 +227,11 @@
             color: var(--text-muted);
         }
 
-        .account-arr {
-            text-align: right;
-        }
-
-        .account-arr-value {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--success);
-        }
-
-        .account-arr-label {
-            font-size: 11px;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .signal-list {
+        .signals-list {
             display: flex;
             flex-direction: column;
             gap: 12px;
+            margin-bottom: 20px;
         }
 
         .signal-item {
@@ -372,13 +247,6 @@
         .signal-item:hover {
             transform: translateX(4px);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-        }
-
-        .signals-list {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            margin-bottom: 20px;
         }
 
         .signal-dot {
@@ -454,56 +322,6 @@
             font-weight: 500;
         }
 
-        .signal-item.expansion {
-            border-left-color: var(--success);
-            background: rgba(52, 211, 153, 0.08);
-        }
-
-        .signal-item.risk {
-            border-left-color: var(--danger);
-            background: rgba(248, 113, 113, 0.08);
-        }
-
-        .signal-item.renewal {
-            border-left-color: var(--warning);
-            background: rgba(251, 191, 36, 0.08);
-        }
-
-        .signal-icon {
-            width: 32px;
-            height: 32px;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            font-size: 16px;
-        }
-
-        .signal-item.expansion .signal-icon { background: rgba(52, 211, 153, 0.2); }
-        .signal-item.risk .signal-icon { background: rgba(248, 113, 113, 0.2); }
-        .signal-item.renewal .signal-icon { background: rgba(251, 191, 36, 0.2); }
-
-        .signal-content h4 {
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 2px;
-        }
-
-        .signal-content p {
-            font-size: 12px;
-            color: var(--text-secondary);
-        }
-
-        .signal-content .evidence {
-            font-size: 11px;
-            color: var(--accent);
-            margin-top: 6px;
-            display: flex;
-            align-items: center;
-            gap: 4px;
-        }
-
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -521,43 +339,6 @@
             position: relative;
         }
 
-        .section-header {
-            text-align: center;
-            max-width: 900px;
-            margin: 0 auto 80px;
-        }
-
-        .section-label {
-            font-size: 13px;
-            color: var(--primary-coral);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: 600;
-            margin-bottom: 16px;
-        }
-
-        .section-title {
-            font-family: var(--font-display);
-            font-size: clamp(24px, 3vw, 40px);
-            font-weight: 400;
-            line-height: 1.15;
-            margin-bottom: 20px;
-        }
-
-        .section-title em {
-            font-style: italic;
-            color: var(--primary-coral);
-        }
-
-        .section-subtitle {
-            font-size: 16px;
-            color: var(--text-secondary);
-            line-height: 1.7;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
         .pain-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -567,8 +348,8 @@
         }
 
         .pain-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
+            background: white;
+            border: 1px solid var(--border-light);
             border-radius: 16px;
             padding: 32px;
             display: flex;
@@ -620,7 +401,7 @@
             left: 0;
             right: 0;
             height: 1px;
-            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+            background: linear-gradient(90deg, transparent, var(--primary-blue), transparent);
         }
 
         .solution-intro {
@@ -639,7 +420,7 @@
 
         .solution-intro h2 em {
             font-style: italic;
-            color: var(--accent);
+            color: var(--primary-blue);
         }
 
         .solution-intro p {
@@ -656,8 +437,8 @@
         }
 
         .solution-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
+            background: white;
+            border: 1px solid var(--border-light);
             border-radius: 20px;
             padding: 36px;
             position: relative;
@@ -690,7 +471,7 @@
         .solution-card-icon {
             width: 56px;
             height: 56px;
-            background: var(--accent-dim);
+            background: rgba(107, 158, 229, 0.1);
             border-radius: 14px;
             display: flex;
             align-items: center;
@@ -748,7 +529,7 @@
         .usecase-tab {
             padding: 14px 28px;
             background: transparent;
-            border: 1px solid var(--border);
+            border: 1px solid var(--border-light);
             border-radius: 8px;
             color: var(--text-secondary);
             font-size: 15px;
@@ -766,7 +547,7 @@
         .usecase-tab.active {
             background: var(--primary-coral);
             border-color: var(--primary-coral);
-            color: var(--bg-primary);
+            color: white;
         }
 
         .usecase-content {
@@ -795,7 +576,7 @@
 
         .usecase-text h3 em {
             font-style: italic;
-            color: var(--accent);
+            color: var(--primary-blue);
         }
 
         .usecase-text > p {
@@ -820,18 +601,12 @@
         .usecase-benefit-icon {
             width: 36px;
             height: 36px;
-            background: var(--accent-dim);
+            background: rgba(107, 158, 229, 0.1);
             border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
-        }
-
-        .usecase-benefit-icon svg {
-            width: 18px;
-            height: 18px;
-            color: var(--accent);
         }
 
         .usecase-benefit h4 {
@@ -848,7 +623,7 @@
         /* Use Case Visual */
         .usecase-visual {
             background: var(--bg-primary);
-            border: 1px solid var(--border);
+            border: 1px solid var(--border-light);
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 20px 40px rgba(107, 158, 229, 0.12), 0 8px 16px rgba(0, 0, 0, 0.06);
@@ -863,7 +638,7 @@
         .usecase-visual-header {
             padding: 16px 22px;
             background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--bg-secondary) 100%);
-            border-bottom: 1px solid var(--border);
+            border-bottom: 1px solid var(--border-light);
             display: flex;
             align-items: center;
             justify-content: flex-start;
@@ -877,74 +652,12 @@
             letter-spacing: -0.01em;
         }
 
-        .usecase-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-        }
-
-        .usecase-dot:nth-child(1) { background: #ff5f56; }
-        .usecase-dot:nth-child(2) { background: #ffbd2e; }
-        .usecase-dot:nth-child(3) { background: #27ca40; }
-
         .usecase-visual-body {
             padding: 24px;
             background: var(--bg-primary);
         }
 
         /* Renewal Visual */
-        .renewal-timeline {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-
-        .renewal-item {
-            display: flex;
-            gap: 16px;
-            padding: 16px;
-            background: var(--bg-tertiary);
-            border-radius: 10px;
-            align-items: center;
-        }
-
-        .renewal-date {
-            width: 60px;
-            text-align: center;
-            flex-shrink: 0;
-        }
-
-        .renewal-date-day {
-            font-size: 24px;
-            font-weight: 700;
-        }
-
-        .renewal-date-month {
-            font-size: 11px;
-            color: var(--text-muted);
-            text-transform: uppercase;
-        }
-
-        .renewal-info {
-            flex: 1;
-        }
-
-        .renewal-info h4 {
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 2px;
-        }
-
-        .renewal-info p {
-            font-size: 12px;
-            color: var(--text-muted);
-        }
-
-        .renewal-amount {
-            font-size: 16px;
-            font-weight: 700;
-        }
-
         .renewal-status {
             padding: 0;
         }
@@ -955,7 +668,7 @@
             align-items: center;
             margin-bottom: 20px;
             padding-bottom: 16px;
-            border-bottom: 1px solid var(--border);
+            border-bottom: 1px solid var(--border-light);
         }
 
         .renewal-status-header h4 {
@@ -973,7 +686,7 @@
 
         .renewal-badge.warning {
             background: rgba(245, 185, 61, 0.15);
-            color: var(--warning);
+            color: var(--primary-gold-dark);
         }
 
         .renewal-milestones {
@@ -1004,7 +717,7 @@
 
         .milestone.active {
             background: rgba(107, 158, 229, 0.1);
-            border-left: 3px solid var(--accent);
+            border-left: 3px solid var(--primary-blue);
         }
 
         .milestone-check {
@@ -1024,13 +737,13 @@
         }
 
         .milestone.active .milestone-check {
-            background: var(--accent);
+            background: var(--primary-blue);
             color: white;
         }
 
         .milestone:not(.complete):not(.active) .milestone-check {
             background: var(--bg-tertiary);
-            border: 2px solid var(--border);
+            border: 2px solid var(--border-light);
             color: var(--text-muted);
         }
 
@@ -1046,41 +759,12 @@
             color: var(--text-primary);
         }
 
-        .renewal-status-badge {
-            padding: 4px 10px;
-            border-radius: 4px;
-            font-size: 11px;
-            font-weight: 600;
-            text-transform: uppercase;
-        }
-
-        .renewal-status.ready {
-            background: rgba(52, 211, 153, 0.15);
-            color: var(--success);
-        }
-
-        .renewal-status.at-risk {
-            background: rgba(248, 113, 113, 0.15);
-            color: var(--danger);
-        }
-
-        .renewal-status.prep {
-            background: rgba(251, 191, 36, 0.15);
-            color: var(--warning);
-        }
-
         /* Expansion Visual */
-        .expansion-signals {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-
         .expansion-signal {
             padding: 18px;
             background: var(--bg-primary);
             border-radius: 12px;
-            border: 1px solid var(--border);
+            border: 1px solid var(--border-light);
             border-left: 4px solid var(--success);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -1092,7 +776,7 @@
         }
 
         .expansion-signal-medium {
-            border-left: 4px solid var(--warning);
+            border-left: 4px solid var(--primary-gold-dark);
         }
 
         .expansion-signal-header {
@@ -1104,7 +788,7 @@
 
         .expansion-signal-badge {
             padding: 5px 10px;
-            background: var(--success-dim);
+            background: rgba(87, 199, 133, 0.1);
             color: var(--success);
             border-radius: 6px;
             font-size: 11px;
@@ -1140,49 +824,6 @@
             color: var(--text-primary);
         }
 
-        .expansion-signal-type {
-            font-size: 11px;
-            color: var(--success);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            font-weight: 600;
-        }
-
-        .expansion-signal-value {
-            font-size: 14px;
-            font-weight: 700;
-            color: var(--success);
-        }
-
-        .expansion-signal h4 {
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 4px;
-        }
-
-        .expansion-signal p {
-            font-size: 13px;
-            color: var(--text-secondary);
-            margin-bottom: 8px;
-        }
-
-        .expansion-signal .quote {
-            font-size: 12px;
-            color: var(--text-muted);
-            font-style: italic;
-            padding: 10px 12px;
-            background: var(--bg-card);
-            border-radius: 6px;
-            border-left: 2px solid var(--accent);
-        }
-
-        .expansion-signal .quote-source {
-            font-size: 11px;
-            color: var(--accent);
-            margin-top: 6px;
-            font-style: normal;
-        }
-
         /* Health Visual */
         .health-dashboard {
             display: flex;
@@ -1197,36 +838,7 @@
             background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
             border-radius: 14px;
             align-items: center;
-            border: 1px solid var(--border);
-        }
-
-        .health-score-visual {
-            position: relative;
-            width: 80px;
-            height: 80px;
-        }
-
-        .health-score-circle {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            background: conic-gradient(var(--warning) 0deg 252deg, var(--bg-card) 252deg 360deg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .health-score-inner {
-            width: 60px;
-            height: 60px;
-            background: var(--bg-tertiary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            font-weight: 700;
-            color: var(--warning);
+            border: 1px solid var(--border-light);
         }
 
         .health-score-details h4 {
@@ -1252,7 +864,7 @@
             gap: 12px;
             padding: 12px 16px;
             background: var(--bg-primary);
-            border: 1px solid var(--border);
+            border: 1px solid var(--border-light);
             border-radius: 10px;
             transition: transform 0.2s ease;
         }
@@ -1269,8 +881,8 @@
         }
 
         .health-factor-indicator.good { background: var(--success); }
-        .health-factor-indicator.warning { background: var(--warning); }
-        .health-factor-indicator.bad { background: var(--danger); }
+        .health-factor-indicator.warning { background: var(--primary-gold-dark); }
+        .health-factor-indicator.bad { background: var(--primary-coral); }
 
         .health-factor-label {
             flex: 1;
@@ -1307,7 +919,7 @@
 
         .brief-text h2 em {
             font-style: italic;
-            color: var(--accent);
+            color: var(--primary-blue);
         }
 
         .brief-text > p {
@@ -1331,7 +943,7 @@
         .brief-feature-icon {
             width: 40px;
             height: 40px;
-            background: var(--danger-dim);
+            background: rgba(239, 109, 109, 0.1);
             border-radius: 10px;
             display: flex;
             align-items: center;
@@ -1353,17 +965,17 @@
 
         /* Brief Preview */
         .brief-preview {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
+            background: white;
+            border: 1px solid var(--border-light);
             border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 40px 80px rgba(0,0,0,0.4);
+            box-shadow: 0 40px 80px rgba(0,0,0,0.1);
         }
 
         .brief-preview-header {
             padding: 24px;
-            background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-dark-secondary) 100%);
-            border-bottom: 1px solid var(--border);
+            background: linear-gradient(135deg, var(--bg-dark) 0%, #243656 100%);
+            border-bottom: 1px solid var(--border-light);
             border-radius: 16px 16px 0 0;
         }
 
@@ -1413,8 +1025,8 @@
         }
 
         .brief-preview-metric-value.green { color: var(--success); }
-        .brief-preview-metric-value.yellow { color: var(--warning); }
-        .brief-preview-metric-value.red { color: var(--danger); }
+        .brief-preview-metric-value.yellow { color: var(--primary-gold-dark); }
+        .brief-preview-metric-value.red { color: var(--primary-coral); }
 
         .brief-preview-metric-label {
             font-size: 10px;
@@ -1460,12 +1072,12 @@
 
         .brief-preview-action.risk {
             background: rgba(248, 113, 113, 0.1);
-            border-left: 3px solid var(--danger);
+            border-left: 3px solid var(--primary-coral);
         }
 
         .brief-preview-action.renewal {
             background: rgba(251, 191, 36, 0.1);
-            border-left: 3px solid var(--warning);
+            border-left: 3px solid var(--primary-gold-dark);
         }
 
         .brief-preview-action-icon {
@@ -1499,7 +1111,7 @@
             padding: 120px 48px;
         }
 
-        .results-grid {
+        .results-section .results-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 24px;
@@ -1507,99 +1119,50 @@
             margin: 0 auto;
         }
 
-        .result-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
+        .results-section .result-card {
+            background: white;
+            border: 1px solid var(--border-light);
             border-radius: 16px;
             padding: 32px;
             text-align: center;
             transition: all 0.3s ease;
         }
 
-        .result-card:hover {
-            border-color: var(--accent);
+        .results-section .result-card:hover {
+            border-color: var(--primary-blue);
             transform: translateY(-4px);
         }
 
-        .result-value {
+        .results-section .result-value {
             font-family: var(--font-display);
             font-size: 48px;
-            color: var(--accent);
+            color: var(--primary-blue);
             margin-bottom: 8px;
         }
 
-        .result-value.coral {
+        .results-section .result-value.coral {
             color: var(--primary-coral);
         }
 
-        .result-value.gold {
+        .results-section .result-value.gold {
             color: var(--primary-gold-dark);
         }
 
-        .result-value.green {
+        .results-section .result-value.green {
             color: var(--success);
         }
 
-        .result-label {
+        .results-section .result-label {
             font-size: 14px;
             color: var(--text-secondary);
             line-height: 1.5;
         }
 
-        /* ==================== TESTIMONIAL ==================== */
-        .testimonial-section {
-            padding: 120px 48px;
-            background: var(--bg-secondary);
-        }
-
-        .testimonial-card {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .testimonial-quote {
-            font-family: var(--font-display);
-            font-size: clamp(24px, 3vw, 32px);
+        .result-source {
+            font-size: 11px;
+            color: #94a3b8;
             font-style: italic;
-            line-height: 1.5;
-            margin-bottom: 40px;
-            color: var(--text-primary);
-        }
-
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 16px;
-        }
-
-        .testimonial-avatar {
-            width: 56px;
-            height: 56px;
-            background: linear-gradient(135deg, var(--accent) 0%, #8b5cf6 100%);
-            border-radius: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 20px;
-            color: white;
-        }
-
-        .testimonial-info {
-            text-align: left;
-        }
-
-        .testimonial-name {
-            font-size: 16px;
-            font-weight: 600;
-            margin-bottom: 2px;
-        }
-
-        .testimonial-title {
-            font-size: 14px;
-            color: var(--text-muted);
+            margin-top: 8px;
         }
 
         /* ==================== CTA SECTION ==================== */
@@ -1616,12 +1179,12 @@
             transform: translateX(-50%);
             width: 1000px;
             height: 600px;
-            background: radial-gradient(ellipse, var(--accent-glow) 0%, transparent 60%);
+            background: radial-gradient(ellipse, rgba(107, 158, 229, 0.15) 0%, transparent 60%);
             opacity: 0.3;
             filter: blur(60px);
         }
 
-        .cta-content {
+        .cta-section .cta-content {
             max-width: 700px;
             margin: 0 auto;
             text-align: center;
@@ -1629,7 +1192,7 @@
             z-index: 2;
         }
 
-        .cta-content h2 {
+        .cta-section .cta-content h2 {
             font-family: var(--font-display);
             font-size: clamp(32px, 4vw, 48px);
             font-weight: 400;
@@ -1637,21 +1200,15 @@
             margin-bottom: 20px;
         }
 
-        .cta-content h2 em {
+        .cta-section .cta-content h2 em {
             font-style: italic;
-            color: var(--primary-coral-light);
+            color: var(--primary-coral);
         }
 
-        .cta-content > p {
+        .cta-section .cta-content > p {
             font-size: 18px;
             color: var(--text-secondary);
             margin-bottom: 40px;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 16px;
-            justify-content: center;
         }
 
         /* ==================== RESPONSIVE ==================== */
@@ -1689,39 +1246,36 @@
                 grid-template-columns: 1fr;
             }
 
-            .results-grid {
+            .results-section .results-grid {
                 grid-template-columns: repeat(2, 1fr);
+            }
+
+            .pain-section,
+            .solution-section,
+            .usecases-section,
+            .brief-section,
+            .results-section,
+            .cta-section {
+                padding: 80px 24px;
             }
         }
 
         @media (max-width: 768px) {
-            .hero {
-                padding: 120px 24px 60px;
-            }
-
             .hero-stats {
                 flex-direction: column;
                 gap: 16px;
-            }
-
-            section {
-                padding: 80px 24px;
             }
 
             .usecase-tabs {
                 flex-wrap: wrap;
             }
 
-            .results-grid {
+            .results-section .results-grid {
                 grid-template-columns: 1fr;
             }
 
             .brief-preview-metrics {
                 grid-template-columns: repeat(2, 1fr);
-            }
-
-            .cta-buttons {
-                flex-direction: column;
             }
         }
     </style>
@@ -1792,25 +1346,25 @@
                 <p class="hero-subtitle">
                     Actioner monitors every customer touchpoint—emails, QBR notes, support tickets, and product usage—
                     and surfaces renewal risks, expansion opportunities, and stakeholder changes <strong>before</strong> they surprise you.
-                    <br><span style="display:inline-block;margin-top:10px;font-size:14px;color:var(--text-muted);">If you own adoption and value delivery, see <a href="for-csms.html" style="color:var(--accent-secondary);text-decoration:none;">For Customer Success Managers</a>.</span>
+                    <br><span style="display:inline-block;margin-top:10px;font-size:14px;color:var(--text-muted);">If you own adoption and value delivery, see <a href="for-csms.html" style="color:var(--primary-blue);text-decoration:none;">For Customer Success Managers</a>.</span>
                 </p>
 
                 <div class="hero-cta">
-                    <a href="#" class="btn btn-primary btn-large">Book a Demo</a>
+                    <a href="#" class="btn btn-primary btn-xl">Book a Demo</a>
                 </div>
 
                 <div class="hero-stats">
                     <div class="hero-stat">
-                        <div class="hero-stat-value coral">+18%</div>
-                        <div class="hero-stat-label">Net Revenue Retention</div>
+                        <div class="hero-stat-value coral">67%</div>
+                        <div class="hero-stat-label">Expansion Opportunities Missed</div>
                     </div>
                     <div class="hero-stat">
-                        <div class="hero-stat-value gold">34%</div>
-                        <div class="hero-stat-label">More Expansion Revenue</div>
+                        <div class="hero-stat-value gold">5-25x</div>
+                        <div class="hero-stat-label">Cost to Acquire vs Retain</div>
                     </div>
                     <div class="hero-stat">
                         <div class="hero-stat-value green">91%</div>
-                        <div class="hero-stat-label">Renewal Rate</div>
+                        <div class="hero-stat-label">CRM Data Incomplete</div>
                     </div>
                 </div>
             </div>
@@ -1835,7 +1389,7 @@
                                 <div class="signal-dot"></div>
                                 <div class="signal-content">
                                     <p class="signal-title">Procurement pulled in</p>
-                                    <p class="signal-detail">“Send SOC2 & DPA by Friday” — email, yesterday</p>
+                                    <p class="signal-detail">"Send SOC2 & DPA by Friday" — email, yesterday</p>
                                 </div>
                             </div>
 
@@ -1843,7 +1397,7 @@
                                 <div class="signal-dot"></div>
                                 <div class="signal-content">
                                     <p class="signal-title">Expansion intent detected</p>
-                                    <p class="signal-detail">“We’re adding 50 seats in Q2” — QBR transcript</p>
+                                    <p class="signal-detail">"We're adding 50 seats in Q2" — QBR transcript</p>
                                 </div>
                             </div>
 
@@ -1865,14 +1419,15 @@
             </div>
         </div>
     </section>
-<!-- Pain Points Section -->
+
+    <!-- Pain Points Section -->
     <section class="pain-section">
         <div class="section-header">
             <p class="section-label">The Challenge</p>
             <h2 class="section-title">Renewals + expansions across 50+ accounts is <em>impossible</em> without missing signals</h2>
             <p class="section-subtitle">
-                Renewal risk hides in emails and escalations. Expansion intent shows up in feature asks, org changes, and “next quarter” hints.
-                You can’t read everything—but the signal is there.
+                Renewal risk hides in emails and escalations. Expansion intent shows up in feature asks, org changes, and "next quarter" hints.
+                You can't read everything—but the signal is there.
             </p>
         </div>
 
@@ -1881,7 +1436,7 @@
                 <div class="pain-icon">📈</div>
                 <div class="pain-content">
                     <h3>Expansion signals buried in noise</h3>
-                    <p>A customer casually mentions growth, new teams, or additional regions—then the moment passes. If you don’t catch it, the upsell never happens.</p>
+                    <p>A customer casually mentions growth, new teams, or additional regions—then the moment passes. If you don't catch it, the upsell never happens.</p>
                 </div>
             </div>
 
@@ -1905,17 +1460,18 @@
                 <div class="pain-icon">🗂️</div>
                 <div class="pain-content">
                     <h3>Account planning takes hours</h3>
-                    <p>QBR prep, renewal prep, expansion planning—each one means digging through threads, notes, and tickets just to reconstruct what’s happening.</p>
+                    <p>QBR prep, renewal prep, expansion planning—each one means digging through threads, notes, and tickets just to reconstruct what's happening.</p>
                 </div>
             </div>
         </div>
     </section>
-<!-- Solution Section -->
+
+    <!-- Solution Section -->
     <section class="solution-section">
         <div class="solution-intro">
             <h2>AI that watches your accounts <em>so you don't have to</em></h2>
             <p>
-                Actioner reads every touchpoint—QBRs, support tickets, emails, usage patterns—and 
+                Actioner reads every touchpoint—QBRs, support tickets, emails, usage patterns—and
                 tells you exactly which accounts need attention, why, and what to do next.
             </p>
         </div>
@@ -1928,7 +1484,7 @@
                 <div class="solution-card-features">
                     <div class="solution-card-feature">New department mentions</div>
                     <div class="solution-card-feature">Seat / usage growth signals</div>
-                    <div class="solution-card-feature">“We should roll this out…” intent</div>
+                    <div class="solution-card-feature">"We should roll this out…" intent</div>
                     <div class="solution-card-feature">Competitor comparisons</div>
                 </div>
             </div>
@@ -1948,7 +1504,7 @@
             <div class="solution-card">
                 <div class="solution-card-icon">🧭</div>
                 <h3>Account plan, kept current</h3>
-                <p>Actioner keeps your account plan up to date based on reality—not last quarter’s deck. Every update is linked to the source.</p>
+                <p>Actioner keeps your account plan up to date based on reality—not last quarter's deck. Every update is linked to the source.</p>
                 <div class="solution-card-features">
                     <div class="solution-card-feature">Stakeholder map & influence</div>
                     <div class="solution-card-feature">Customer goals & success criteria</div>
@@ -1958,7 +1514,8 @@
             </div>
         </div>
     </section>
-<!-- Use Cases Section -->
+
+    <!-- Use Cases Section -->
     <section class="usecases-section">
         <div class="section-header">
             <p class="section-label">How it Works</p>
@@ -1978,7 +1535,7 @@
             <div class="usecase-content active" id="renewals">
                 <div class="usecase-grid">
                     <div class="usecase-text">
-                        <h3>Renewals that don’t turn into a fire drill</h3>
+                        <h3>Renewals that don't turn into a fire drill</h3>
                         <p>
                             Actioner tracks renewal readiness continuously—decision makers, blockers, and next steps—so the last 60 days are calm and controlled.
                         </p>
@@ -1987,14 +1544,14 @@
                                 <div class="usecase-benefit-icon">📅</div>
                                 <div>
                                     <h4>Renewal timeline stays current</h4>
-                                    <p>Milestones update after every customer interaction. No more “we’ll update it later.”</p>
+                                    <p>Milestones update after every customer interaction. No more "we'll update it later."</p>
                                 </div>
                             </div>
                             <div class="usecase-benefit">
                                 <div class="usecase-benefit-icon">🧾</div>
                                 <div>
                                     <h4>Procurement & legal tracked</h4>
-                                    <p>When security, DPA, or pricing comes up, it’s flagged and routed—before it blocks signature.</p>
+                                    <p>When security, DPA, or pricing comes up, it's flagged and routed—before it blocks signature.</p>
                                 </div>
                             </div>
                             <div class="usecase-benefit">
@@ -2048,7 +1605,7 @@
             <div class="usecase-content" id="expansion">
                 <div class="usecase-grid">
                     <div class="usecase-text">
-                        <h3>Expansion opportunities you didn’t have to hunt for</h3>
+                        <h3>Expansion opportunities you didn't have to hunt for</h3>
                         <p>
                             Actioner detects expansion intent across conversations and product signals—then suggests the right play and who to talk to.
                         </p>
@@ -2057,7 +1614,7 @@
                                 <div class="usecase-benefit-icon">🔍</div>
                                 <div>
                                     <h4>Intent detection</h4>
-                                    <p>“We’re hiring,” “new team,” “more seats,” “rolling out…”—captured automatically.</p>
+                                    <p>"We're hiring," "new team," "more seats," "rolling out…"—captured automatically.</p>
                                 </div>
                             </div>
                             <div class="usecase-benefit">
@@ -2078,7 +1635,7 @@
                                 <div class="usecase-benefit-icon">⚔️</div>
                                 <div>
                                     <h4>Competitive intel</h4>
-                                    <p>AI detects mentions of competitors or “shopping around” language in customer communications.</p>
+                                    <p>AI detects mentions of competitors or "shopping around" language in customer communications.</p>
                                 </div>
                             </div>
                         </div>
@@ -2103,7 +1660,7 @@
                             </div>
                             <div class="expansion-signal expansion-signal-medium" style="margin-top: 14px;">
                                 <div class="expansion-signal-header">
-                                    <span class="expansion-signal-badge" style="background: var(--warning-dim); color: var(--warning);">Medium intent</span>
+                                    <span class="expansion-signal-badge" style="background: rgba(245, 185, 61, 0.15); color: var(--primary-gold-dark);">Medium intent</span>
                                     <span class="expansion-signal-date">3 days ago</span>
                                 </div>
                                 <h4>"We're hiring 20 analysts next quarter"</h4>
@@ -2120,9 +1677,9 @@
             <div class="usecase-content" id="planning">
                 <div class="usecase-grid">
                     <div class="usecase-text">
-                        <h3>Account plans that don’t go stale</h3>
+                        <h3>Account plans that don't go stale</h3>
                         <p>
-                            Actioner keeps the “what’s going on” story current—goals, stakeholders, risks, and next steps—so you can run QBRs and renewal conversations confidently.
+                            Actioner keeps the "what's going on" story current—goals, stakeholders, risks, and next steps—so you can run QBRs and renewal conversations confidently.
                         </p>
                         <div class="usecase-benefits">
                             <div class="usecase-benefit">
@@ -2136,7 +1693,7 @@
                                 <div class="usecase-benefit-icon">🗺️</div>
                                 <div>
                                     <h4>Stakeholders, influence, org changes</h4>
-                                    <p>Know who’s in the room, who’s missing, and who now has the power to say “yes.”</p>
+                                    <p>Know who's in the room, who's missing, and who now has the power to say "yes."</p>
                                 </div>
                             </div>
                             <div class="usecase-benefit">
@@ -2157,10 +1714,10 @@
                         <div class="usecase-visual-body">
                             <div class="health-dashboard">
                                 <div class="health-score-card">
-                                    <div style="width: 80px; height: 80px; border-radius: 18px; background: linear-gradient(135deg, var(--accent-dim) 0%, rgba(107, 158, 229, 0.2) 100%); display:flex; align-items:center; justify-content:center;"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="var(--accent)" stroke="var(--accent)"/></svg></div>
+                                    <div style="width: 80px; height: 80px; border-radius: 18px; background: linear-gradient(135deg, rgba(107, 158, 229, 0.1) 0%, rgba(107, 158, 229, 0.2) 100%); display:flex; align-items:center; justify-content:center;"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--primary-blue)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="var(--primary-blue)" stroke="var(--primary-blue)"/></svg></div>
                                     <div class="health-score-details">
                                         <h4>Summit Financial Services</h4>
-                                        <p>Primary goal: “Roll out to 3 teams by Q2.” Renewal blocker: Security review. Expansion owner: VP Ops.</p>
+                                        <p>Primary goal: "Roll out to 3 teams by Q2." Renewal blocker: Security review. Expansion owner: VP Ops.</p>
                                     </div>
                                 </div>
 
@@ -2173,12 +1730,12 @@
                                     <div class="health-factor">
                                         <div class="health-factor-indicator warning"></div>
                                         <span class="health-factor-label">Procurement status</span>
-                                        <span class="health-factor-value" style="color: var(--warning);">Requested docs</span>
+                                        <span class="health-factor-value" style="color: var(--primary-gold-dark);">Requested docs</span>
                                     </div>
                                     <div class="health-factor">
                                         <div class="health-factor-indicator bad"></div>
                                         <span class="health-factor-label">Competitive mention</span>
-                                        <span class="health-factor-value" style="color: var(--danger);">"Also evaluating X"</span>
+                                        <span class="health-factor-value" style="color: var(--primary-coral);">"Also evaluating X"</span>
                                     </div>
                                     <div class="health-factor">
                                         <div class="health-factor-indicator good"></div>
@@ -2198,7 +1755,8 @@
             </div>
         </div>
     </section>
-<!-- Brief Section -->
+
+    <!-- Brief Section -->
     <section class="brief-section">
         <div class="brief-grid">
             <div class="brief-text">
@@ -2206,7 +1764,7 @@
                 <p>
                     Every Monday, Actioner delivers an Account Manager Brief—a prioritized list of renewal risks and expansion opportunities across your book of business. No digging required.
                 </p>
-                
+
                 <div class="brief-features">
                     <div class="brief-feature">
                         <div class="brief-feature-icon">🎯</div>
@@ -2215,7 +1773,7 @@
                             <p>Biggest risks and opportunities surface first. Know where to spend your time.</p>
                         </div>
                     </div>
-                    
+
                     <div class="brief-feature">
                         <div class="brief-feature-icon">📋</div>
                         <div>
@@ -2223,7 +1781,7 @@
                             <p>Each item includes what happened, why it matters, and what to do next.</p>
                         </div>
                     </div>
-                    
+
                     <div class="brief-feature">
                         <div class="brief-feature-icon">🔗</div>
                         <div>
@@ -2233,7 +1791,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="brief-preview">
                 <div class="brief-preview-header">
                     <div class="brief-preview-title">
@@ -2266,7 +1824,7 @@
                     <p class="brief-preview-summary">
                         <strong>This week:</strong> 3 accounts need immediate attention. Summit Financial shows churn risk signals—schedule executive alignment. Meridian has strong expansion potential worth $85K.
                     </p>
-                    
+
                     <div class="brief-preview-actions">
                         <div class="brief-preview-action expansion">
                             <div class="brief-preview-action-icon">📈</div>
@@ -2275,7 +1833,7 @@
                                 <p>Ops team wants 50 seats. Set up expansion call with Marcus Johnson.</p>
                             </div>
                         </div>
-                        
+
                         <div class="brief-preview-action risk">
                             <div class="brief-preview-action-icon">⚠️</div>
                             <div>
@@ -2283,7 +1841,7 @@
                                 <p>New CFO reviewing vendors. Schedule exec alignment before renewal.</p>
                             </div>
                         </div>
-                        
+
                         <div class="brief-preview-action renewal">
                             <div class="brief-preview-action-icon">📅</div>
                             <div>
@@ -2300,29 +1858,33 @@
     <!-- Results Section -->
     <section class="results-section">
         <div class="section-header">
-            <p class="section-label">Results</p>
-            <h2 class="section-title">What AMs achieve with <em>Actioner</em></h2>
+            <p class="section-label">The Challenge</p>
+            <h2 class="section-title">Why Account Managers <em>need better tools</em></h2>
         </div>
-        
+
         <div class="results-grid">
             <div class="result-card">
-                <div class="result-value coral">+18%</div>
-                <div class="result-label">Net Revenue<br>Retention</div>
+                <div class="result-value coral">67%</div>
+                <div class="result-label">of expansion opportunities<br>are missed</div>
+                <div class="result-source">Gartner Research</div>
             </div>
-            
+
             <div class="result-card">
-                <div class="result-value gold">34%</div>
-                <div class="result-label">More Expansion<br>Revenue</div>
+                <div class="result-value gold">5-25x</div>
+                <div class="result-label">more expensive to acquire<br>than retain</div>
+                <div class="result-source">Harvard Business Review</div>
             </div>
-            
+
             <div class="result-card">
                 <div class="result-value green">91%</div>
-                <div class="result-label">Renewal<br>Rate</div>
+                <div class="result-label">of CRM data is<br>incomplete</div>
+                <div class="result-source">Validity Research</div>
             </div>
-            
+
             <div class="result-card">
-                <div class="result-value">6hrs</div>
-                <div class="result-label">Saved Per<br>Week</div>
+                <div class="result-value">70%</div>
+                <div class="result-label">of time spent on<br>admin tasks</div>
+                <div class="result-source">Salesforce Research</div>
             </div>
         </div>
     </section>
@@ -2334,7 +1896,7 @@
             <h2>Ready to run renewals and expansions <em>with confidence?</em></h2>
             <p>Get your first Account Manager Brief in minutes—then stop losing expansion signals and renewal details in scattered threads.</p>
             <div class="cta-buttons">
-                <a href="#" class="btn btn-primary btn-large">Book a Demo</a>
+                <a href="#" class="btn btn-primary btn-xl">Book a Demo</a>
             </div>
         </div>
     </section>
@@ -2348,39 +1910,57 @@
                 </a>
                 <p>© 2026 Actioner.<br>All rights reserved.</p>
                 <div class="footer-social">
-                    <a href="https://twitter.com/actaborad" title="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-                    <a href="#" title="Slack"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.956 8.834a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zM17.688 8.834a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312zM15.165 18.956a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zM15.165 17.688a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z"/></svg></a>
-                    <a href="https://www.linkedin.com/company/actioner" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-                    <a href="https://www.youtube.com/@actioner" title="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
-                    <a href="mailto:support@actioner.com" title="Email"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
+                    <a href="https://twitter.com/actaborad" title="X (Twitter)">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/actioner" title="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@actioner" title="YouTube">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+                    <a href="mailto:support@actioner.com" title="Email">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                    </a>
                 </div>
             </div>
+
             <div class="footer-column">
                 <h4>Solutions</h4>
                 <ul class="footer-links">
                     <li><a href="for-aes.html">For Account Executives</a></li>
                     <li><a href="for-ams.html">For Account Managers</a></li>
-                    <li><a href="for-csms.html">For Customer Success Managers</a></li>
+                    <li><a href="for-csms.html">For Customer Success</a></li>
                     <li><a href="for-sales-leaders.html">For Sales Leaders</a></li>
                 </ul>
             </div>
+
             <div class="footer-column">
                 <h4>Resources</h4>
                 <ul class="footer-links">
                     <li><a href="https://actioner.com/blog">Blog</a></li>
                     <li><a href="https://actioner.com/help/videos">How to Videos</a></li>
-                    <li><a href="https://actioner.com/manifesto">Manifesto</a></li>
+                    <li><a href="manifesto.html">Manifesto</a></li>
                 </ul>
             </div>
+
             <div class="footer-column">
-                <h4>Learn More</h4>
+                <h4>Company</h4>
                 <ul class="footer-links">
-                    <li><a href="https://actioner.com/about">About Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="https://actioner.com/terms">Terms & Conditions</a></li>
                     <li><a href="https://actioner.com/privacy">Privacy Policy</a></li>
-                    <li><a href="https://actioner.com/disclaimer">Disclaimer</a></li>
                 </ul>
             </div>
+
             <div class="footer-column">
                 <h4>Get in Touch</h4>
                 <ul class="footer-links">
@@ -2396,15 +1976,15 @@
             document.querySelectorAll('.usecase-content').forEach(content => {
                 content.classList.remove('active');
             });
-            
+
             // Remove active from all tabs
             document.querySelectorAll('.usecase-tab').forEach(tab => {
                 tab.classList.remove('active');
             });
-            
+
             // Show selected content
             document.getElementById(id).classList.add('active');
-            
+
             // Activate clicked tab
             event.target.classList.add('active');
         }
