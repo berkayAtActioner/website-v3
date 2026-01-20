@@ -72,7 +72,29 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Page-specific styles for AE hero visual */
+        /* Page-specific styles for AE page */
+
+        /* Hero Section - Two Column Layout */
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-text {
+            max-width: 560px;
+            text-align: left;
+        }
+
+        .hero-text .hero-cta-group {
+            align-items: flex-start;
+        }
+
         .hero-visual { position: relative; }
         .hero-phone { background: white; border: 1px solid var(--border-light); border-radius: 24px; overflow: hidden; box-shadow: var(--shadow-xl); max-width: 380px; margin: 0 auto; }
         .phone-header { padding: 16px 20px; background: var(--bg-tertiary); border-bottom: 1px solid var(--border-light); display: flex; align-items: center; gap: 12px; }
@@ -159,7 +181,29 @@
         .final-cta .btn-secondary { background: transparent; border-color: rgba(255,255,255,0.3); color: white; }
         .final-cta-note { font-size: 13px; color: rgba(255,255,255,0.5); }
 
+        .hero-cta-note { display: flex; gap: 20px; justify-content: center; margin-top: 16px; }
+        .hero-cta-note span { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--text-tertiary); }
+        .hero-cta-note svg { width: 16px; height: 16px; color: var(--success); flex-shrink: 0; }
+
         @media (max-width: 1024px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-text {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            .hero-text .hero-cta-group {
+                align-items: center;
+            }
+
+            .hero-cta-note {
+                justify-content: center;
+            }
+
             .hero-visual { display: none; }
             .how-steps, .value-grid, .usecases-grid, .testimonials-grid { grid-template-columns: 1fr; }
         }
