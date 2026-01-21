@@ -227,15 +227,77 @@
         }
 
         /* Who We Are Section */
-        .who-content p {
-            font-size: 18px;
-            line-height: 1.8;
+        .who-section {
+            background: #e8eef8;
+            padding: 80px 24px;
+        }
+
+        .who-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .who-left {
+            padding-right: 20px;
+        }
+
+        .who-icon {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 20px;
+            color: var(--color-primary);
+        }
+
+        .who-title {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 4vw, 44px);
+            font-weight: 700;
             color: var(--color-text);
             margin-bottom: 24px;
         }
 
-        .who-content p:last-child {
+        .who-content p {
+            font-size: 17px;
+            line-height: 1.8;
+            color: var(--color-text-light);
             margin-bottom: 0;
+        }
+
+        .who-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .who-illustration {
+            max-width: 100%;
+            height: auto;
+            border-radius: 16px;
+        }
+
+        @media (max-width: 900px) {
+            .who-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .who-left {
+                padding-right: 0;
+                text-align: center;
+            }
+
+            .who-icon {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .who-right {
+                order: -1;
+            }
         }
 
         /* What We Believe Section */
@@ -278,6 +340,7 @@
             line-height: 1.7;
         }
 
+
         /* Leaders Section */
         .leaders-container {
             max-width: 1000px;
@@ -311,7 +374,7 @@
         .leader-photo {
             width: 180px;
             height: 180px;
-            border-radius: 16px;
+            border-radius: 50%;
             background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
             display: flex;
             align-items: center;
@@ -320,6 +383,8 @@
             font-size: 48px;
             color: var(--color-primary);
             overflow: hidden;
+            border: 4px solid white;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
         }
 
         .leader-photo img {
@@ -327,6 +392,17 @@
             height: 100%;
             object-fit: cover;
         }
+
+        .leader-name a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .leader-name a:hover {
+            color: var(--color-primary);
+        }
+
 
         .leader-info {
             padding-top: 8px;
@@ -557,14 +633,23 @@
         </div>
     </section>
 
-    <!-- Who We Are Section -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Who are we?</h2>
-            <div class="who-content">
-                <p>Revenue work happens across a dozen places: inboxes, calls, calendars, CRM fields, support threads, and product signals. The context is real, but it's scattered.</p>
-                <p>That's why teams end up stuck in the same loop: reps avoid admin, CRM goes stale, leaders don't trust the forecast, and risks show up late.</p>
-                <p>Actioner connects the dots so AEs, AMs, CSMs, and leaders can run consistent motions across the full customer lifecycle — from pipeline to renewals and expansion.</p>
+    <!-- Who We Are Section with Team Illustration -->
+    <section class="who-section">
+        <div class="who-container">
+            <div class="who-left">
+                <!-- Megaphone Icon -->
+                <svg class="who-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 11l18-5v12L3 13v-2z"/>
+                    <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/>
+                    <line x1="21" y1="6" x2="21" y2="18"/>
+                </svg>
+                <h2 class="who-title">Who Are We?</h2>
+                <div class="who-content">
+                    <p>Customer-success, support, account and product teams all own a piece of the retention puzzle but the signals they need live in different tools. Actioner brings those signals together, turning scattered data into AI agents that spot risk, surface growth opportunities and keep every team on the same page.</p>
+                </div>
+            </div>
+            <div class="who-right">
+                <img src="team-illustration.png" alt="The Actioner Team" class="who-illustration">
             </div>
         </div>
     </section>
@@ -596,35 +681,43 @@
             <h2 class="section-title">Meet our leaders</h2>
             <div class="leaders-grid">
                 <div class="leader-card">
-                    <div class="leader-photo">BM</div>
+                    <a href="https://www.linkedin.com/in/berkay" target="_blank" rel="noopener noreferrer" class="leader-photo">
+                        <img src="berkay-frame.webp" alt="Berkay Mollamustafaoglu">
+                    </a>
                     <div class="leader-info">
-                        <h3 class="leader-name">Berkay Mollamustafaoglu</h3>
-                        <p class="leader-role">Co-Founder & CEO</p>
-                        <p class="leader-bio">Berkay is the former CEO and co-founder of Opsgenie. He's built and scaled SaaS products where execution discipline and clear signals matter, especially when teams need to make confident decisions fast. At Actioner, Berkay focuses on building an AI-native product that helps revenue teams run predictable pipeline and renewal motions, without the admin burden.</p>
+                        <h3 class="leader-name"><a href="https://www.linkedin.com/in/berkay" target="_blank" rel="noopener noreferrer">Berkay Mollamustafaoglu</a></h3>
+                        <p class="leader-role">Co-Founder</p>
+                        <p class="leader-bio">A serial SaaS entrepreneur and co-founder of Opsgenie, Berkay has grown products from first line of code to nine-figure acquisition. At Actioner he channels that experience into building an AI platform that makes customer context instantly usable for every team.</p>
                     </div>
                 </div>
                 <div class="leader-card">
-                    <div class="leader-photo">ED</div>
+                    <a href="https://www.linkedin.com/in/emeldogrusoz" target="_blank" rel="noopener noreferrer" class="leader-photo">
+                        <img src="emel-frame.webp" alt="Emel Dogrusoz">
+                    </a>
                     <div class="leader-info">
-                        <h3 class="leader-name">Emel Doğrusoz</h3>
-                        <p class="leader-role">Co-Founder (Product)</p>
-                        <p class="leader-bio">Emel is a former product leader at Opsgenie and Atlassian. She's spent years close to real customer conversations, the messy reality of systems, and the gap between what teams think is happening and what's actually happening. At Actioner, Emel shapes how scattered context becomes evidence-based deal and account execution.</p>
+                        <h3 class="leader-name"><a href="https://www.linkedin.com/in/emeldogrusoz" target="_blank" rel="noopener noreferrer">Emel Dogrusoz</a></h3>
+                        <p class="leader-role">Co-Founder</p>
+                        <p class="leader-bio">Former VP of Product at Opsgenie and later Head of Product at Atlassian, Emel has lived every stage of the product-to-customer feedback loop. She ensures Actioner stays laser-focused on solving real-world customer-success pain points.</p>
                     </div>
                 </div>
                 <div class="leader-card">
-                    <div class="leader-photo">UC</div>
+                    <a href="https://www.linkedin.com/in/umit-cakmak" target="_blank" rel="noopener noreferrer" class="leader-photo">
+                        <img src="umit-frame.webp" alt="Ümit Çakmak">
+                    </a>
                     <div class="leader-info">
-                        <h3 class="leader-name">Umit Cakmak</h3>
-                        <p class="leader-role">Co-Founder (Engineering)</p>
-                        <p class="leader-bio">Umit is a technical founder who's built products and infrastructure from scratch across multiple startups. At Actioner, he leads the core platform: connecting data sources, building the context layer, and ensuring what Actioner produces is reliable, secure, and grounded in real signals.</p>
+                        <h3 class="leader-name"><a href="https://www.linkedin.com/in/umit-cakmak" target="_blank" rel="noopener noreferrer">Ümit Çakmak</a></h3>
+                        <p class="leader-role">Co-Founder</p>
+                        <p class="leader-bio">Ümit has spent two decades turning big ideas into resilient, scalable software. His deep architectural know-how keeps Actioner's AI engine both reliable and fast so insights arrive when your team needs them.</p>
                     </div>
                 </div>
                 <div class="leader-card">
-                    <div class="leader-photo">MS</div>
+                    <a href="https://www.linkedin.com/in/senermustafa" target="_blank" rel="noopener noreferrer" class="leader-photo">
+                        <img src="mustafa-frame.webp" alt="Mustafa Şener">
+                    </a>
                     <div class="leader-info">
-                        <h3 class="leader-name">Mustafa Şener</h3>
-                        <p class="leader-role">Co-Founder (Engineering)</p>
-                        <p class="leader-bio">Mustafa is a technical founder who's built startups before Actioner and enjoys turning messy, real-world workflows into systems that teams can trust. At Actioner, he focuses on how intelligence turns into execution: translating context into clear briefs, next steps, and repeatable motions across deals and post-sales.</p>
+                        <h3 class="leader-name"><a href="https://www.linkedin.com/in/senermustafa" target="_blank" rel="noopener noreferrer">Mustafa Şener</a></h3>
+                        <p class="leader-role">Co-Founder</p>
+                        <p class="leader-bio">A lifelong engineer-turned-entrepreneur, Mustafa built no-code service-desk platform Hipporello after serving as a senior developer at Opsgenie. He now brings that blend of technical depth and product instinct to Actioner, expanding our AI capabilities for even more proactive customer engagement.</p>
                     </div>
                 </div>
             </div>
@@ -695,8 +788,9 @@
                 <h4>Company</h4>
                 <ul class="footer-links">
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="https://actioner.com/terms">Terms & Conditions</a></li>
-                    <li><a href="https://actioner.com/privacy">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
                 </ul>
             </div>
 
